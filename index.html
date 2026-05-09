@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+    <meta name="description"
+        content="Main page of the WDD 231 course by Miguel Ángel Cornejo Durand showing the work done, the progress in the BYU web development program and the credits obtained.">
+    <meta name="author" content="Miguel Ángel Cornejo Durand">
+
+    <title>WDD 231 | Home | Miguel Ángel Cornejo Durand</title>
+
+    <link rel="icon" href="images/logo-macd.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1> wdd231 / MACD</h1>
+
+    <header>
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Go to homepage">
+                <img src="images/logo-macd.png" alt="Miguel Ángel Cornejo Durand site logo" width="60" height="60">
+                <span class="brand-name">
+                    Miguel Ángel
+                    <span>Cornejo Durand</span>
+                </span>
+            </a>
+
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" title="Coming in week 2">Chamber</a></li>
+                    <li><a href="#" title="Coming in week 6">Final</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Home</h1>
+                <p>
+                    Welcome to the homepage of my WDD 231 course, where I talk a little about myself, the things I like
+                    to do, show my learning journey in web development, the next project to undertake, and the courses I
+                    took in my progress toward certification.
+                </p>
+            </div>
+        </section>
+
+        <div class="main-grid">
+
+            <section class="card about-section">
+                <h2>About Me</h2>
+
+                <div class="card-content">
+                    <p>
+                        Hello everyone, my name is <strong>Miguel Ángel Cornejo Durand.</strong>
+                        I'm from Cusco, Peru, and the father of a beautiful princess who is my drive and motivation.
+                        I'm a member of <em>The Church of Jesus Christ of Latter-day Saints</em> and serve in the
+                        Arequipa Temple.
+
+                        I love learning new things, especially those related to technology. I enjoy music, movies, video
+                        games, chess, and now, jigsaw puzzles with more than 300 pieces.
+                        I'm passionate about <em>programming and technology</em>, creating digital products, and developing
+                        modern, user-centered applications.
+                       
+                        This page highlights my progress in the WDD 231 course and my journey toward becoming a
+                        stronger developer.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card photo-section">
+                <h2>Student Photo</h2>
+
+                <div class="card-content photo-container">
+                    <img src="images/angel_photo2.webp" alt="Student profile placeholder image" width="250"
+                        height="250">
+                </div>
+            </section>
+
+        </div>
+
+        <section class="card certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="filter-buttons">
+                <button id="all-btn" class="filter-btn active-filter">All Courses</button>
+                <button id="wdd-btn" class="filter-btn">WDD Courses</button>
+                <button id="cse-btn" class="filter-btn">CSE Courses</button>
+            </div>
+
+            <div class="course-summary">
+                <p>
+                    Total courses displayed:
+                    <span id="course-count">0</span>
+                </p>
+            </div>
+
+            <div id="courses-container" class="courses-grid">
+                <!-- Dynamic JS content -->
+            </div>
+
+            <div class="credits-display">
+                <p>
+                    Approved credits:
+                    <span id="approved-credits">0</span>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-social">
+            <a href="https://github.com/Michellangello27/wdd231" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <img src="images/github.svg" alt="GitHub icon" width="36" height="36">
+            </a>
+
+            <a href="https://www.linkedin.com/in/miguel-angel-cornejo-durand-6bb13530/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="images/linkedin.svg" alt="LinkedIn icon" width="36" height="36">
+            </a>
+
+            <a href="https://x.com/M_angello27" target="_blank" rel="noopener noreferrer" aria-label="X social profile">
+                <img src="images/x.svg" alt="X social icon" width="36" height="36">
+            </a>
+        </div>
+
+        <div class="footer-info">
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Miguel Ángel Cornejo Durand | Peru
+            </p>
+        </div>
+
+        <div class="footer-modified">
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>

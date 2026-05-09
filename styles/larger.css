@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: 0.8rem 1.2rem;
+        border-radius: 10px;
+    }
+
+    .brand-name {
+        display: block;
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .brand-name span {
+        display: inline;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .hero {
+        padding: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+
+    .main-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    .filter-buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-info p,
+    .footer-modified p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        padding: 4rem;
+    }
+
+    .brand-name {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .courses-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
