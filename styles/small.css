@@ -188,6 +188,9 @@ header {
     background-color: var(--accent);
 }
 
+.navigation a[aria-current="page"] {
+    background-color: var(--accent);
+}
 
 main {
     max-width: 1200px;
