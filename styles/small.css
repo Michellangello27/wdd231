@@ -216,12 +216,12 @@ main {
 }
 
 .hero h1 {
-    color: var(--white);
+    color: var(--text-primary);
     margin-bottom: 0.8rem;
 }
 
 .hero p {
-    color: rgba(255,255,255,0.95);
+    color:var(--text-secondary);
 }
 
 
@@ -298,7 +298,8 @@ main {
 }
 
 .active-filter {
-    background-color: var(--primary);
+    background: var(--primary);
+    color: var(--white)
 }
 
 
