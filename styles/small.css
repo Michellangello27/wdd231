@@ -181,15 +181,16 @@ header {
     padding: 1rem;
     color: var(--white);
     font-weight: 600;
-    transition: background-color var(--transition);
+    transition: color var(--transition);
+    border-bottom: 3px solid transparent;
 }
 
 .navigation a:hover {
-    background-color: var(--accent);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.45);
 }
 
 .navigation a[aria-current="page"] {
-    background-color: var(--accent);
+    border-bottom: 3px solid var(--white);
 }
 
 main {
