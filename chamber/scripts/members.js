@@ -70,7 +70,7 @@ function displayGridMembers() {
             <img 
             src="${member.image}" 
             alt="${member.name}"
-            loading="${index < 2 ? 'eager' : 'lazy'}"
+            loading="lazy"
             decoding="async"
             width="400"
             height="250">
@@ -165,7 +165,7 @@ function setupViewToggle() {
 /* .............   INIT  ............ */
 
 function initializeDirectory() {
-    if (!membersContainer) return;  
+    if (!membersContainer) return;
 
     gridButton.classList.add("active-view");
 
