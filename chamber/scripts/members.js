@@ -70,7 +70,7 @@ function displayGridMembers() {
             <img 
             src="${member.image}" 
             alt="${member.name}"
-            loading="lazy"
+            loading="${index < 2 ? 'eager' : 'lazy'}"
             decoding="async"
             width="400"
             height="250">
@@ -112,7 +112,7 @@ function displayListMembers() {
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
 
-    membersData.forEach(member => {
+    membersData.forEach((member, index) => {
         const row = document.createElement("article");
         row.classList.add("member-card");
 
