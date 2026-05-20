@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ............. META CONFIGURATION ........... -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Business directory of the Cusco Chamber of Commerce featuring local businesses, services, and membership information.">
+    <meta name="author" content="Miguel Ángel Cornejo Durand">
+
+
+    <!-- ........... OPEN GRAPH SOCIAL META ........... -->
+
+    <meta property="og:title" content="Cusco Chamber of Commerce | Directory">
+    <meta property="og:description"
+        content="Explore businesses and chamber members in the Cusco Chamber of Commerce business directory.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://michellangello27.github.io/wdd231/chamber/images/social-preview.webp">
+    <meta property="og:url" content="https://michellangello27.github.io/wdd231/chamber/directory.html">
+
+
+    <!-- ............. PAGE TITLE & FAVICON ........... -->
+
+    <title>Cusco Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <!-- ............. GOOGLE FONTS ........... -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ........... STYLESHEETS ........... -->
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <!-- ............ JAVASCRIPT FILES ........... -->
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ........... HEADER ........... -->
+
+    <header>
+        <div class="header-container">
+
+            <!-- ............ BRAND LOGO ........... -->
+
+            <a href="home.html" class="brand" aria-label="Go to Cusco Chamber home page">
+                <img src="images/ccc-logo.webp" alt="Cusco Chamber of Commerce site logo" width="60" height="60"
+                    fetchpriority="high">
+
+                <span class="brand-name">
+                    Cusco Chamber of Commerce
+                </span>
+            </a>
+
+
+            <!-- ........... MOBILE MENU BUTTON ........... -->
+
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+
+            <!-- ............. PRIMARY NAVIGATION ........... -->
+
+            <nav id="primary-navigation" class="navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a role="link" class="disabled-link" aria-disabled="true" tabindex="-1">About</a></li>
+                    <li><a role="link" class="disabled-link" aria-disabled="true" tabindex="-1">Podcast</a></li>
+                    <li><a role="link" class="disabled-link" aria-disabled="true" tabindex="-1">Events</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ............ MAIN CONTENT ........... -->
+
+    <main>
+
+        <!-- ............ DIRECTORY INTRO ........... -->
+
+        <section class="directory-intro">
+            <h1>Business Directory</h1>
+
+            <p>
+                Explore businesses, organizations, and chamber members serving
+                the Cusco community. Switch between grid and list views to browse
+                directory listings.
+            </p>
+        </section>
+
+
+        <!-- ............. VIEW TOGGLE CONTROLS ........... -->
+
+        <section class="toolbar" aria-label="Directory view controls">
+            <button id="grid-view" type="button">Grid View</button>
+            <button id="list-view" type="button">List View</button>
+        </section>
+
+
+        <!-- .............. MEMBERS DIRECTORY ........... -->
+
+        <section id="members" class="grid" aria-label="Business directory listings">
+            <!-- In this part, members.js inserts the listing or content -->
+        </section>
+
+    </main>
+
+
+    <!-- ........... FOOTER ........... -->
+
+    <footer>
+
+        <!-- ........... SOCIAL LINKS ........... -->
+
+        <div class="footer-social">
+
+            <a href="https://github.com/Michellangello27/wdd231" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <img src="../images/github-icon.svg" alt="GitHub icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+            <a href="https://www.linkedin.com/in/miguel-angel-cornejo-durand-6bb13530/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="../images/linkedin-icon.svg" alt="LinkedIn icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+            <a href="https://x.com/M_angello27" target="_blank" rel="noopener noreferrer" aria-label="X social profile">
+                <img src="../images/twitter-x-icon.svg" alt="X social icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+        </div>
+
+
+        <!-- ........... AUTHOR INFORMATION ........... -->
+
+        <div class="footer-info">
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Miguel Ángel Cornejo Durand | Cusco, Peru
+            </p>
+        </div>
+
+
+        <!-- ........... LAST MODIFIED DATE ........... -->
+
+        <div class="footer-modified">
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

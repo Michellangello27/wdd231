@@ -1,0 +1,247 @@
+/* ............. TABLET LAYOUT / 768px - 883px  ............  */
+
+@media only screen and (min-width: 768px) and (max-width: 897px) {
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .logo-placeholder {
+        flex: 0 0 56px;
+    }
+
+    .brand-name {
+        display: block;
+        flex: 1 1 auto;
+        min-width: 0;
+        font-size: 1rem;
+        line-height: 1.15;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .menu-button {
+        display: block;
+        position: static;
+        transform: none;
+        flex: 0 0 auto;
+        margin-left: 0.5rem;
+    }
+
+    .navigation {
+        display: none !important;
+    }
+
+    .navigation.open {
+        display: block !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--surface-color);
+        border-top: 1px solid var(--border-color);
+        box-shadow: var(--shadow);
+        z-index: 999;
+    }
+
+    .navigation ul {
+        display: block;
+    }
+
+    .navigation li {
+        border-top: 1px solid var(--border-color);
+    }
+
+    .navigation a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 48px;
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* .............   DESKTOP / 898+  ................. */
+
+@media only screen and (min-width: 898px) {
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.25rem;
+        flex-wrap: nowrap;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex: 0 0 auto;
+    }
+
+    .brand-name {
+        display: block;
+        font-size: 0.95rem;
+        line-height: 1.15;
+        white-space: nowrap;
+        max-width: none;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: block !important;
+        position: static;
+        width: auto;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.35rem;
+        flex-wrap: nowrap;
+    }
+
+    .navigation li {
+        border-top: none;
+        flex: 0 0 auto;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.7rem 0.65rem;
+        white-space: nowrap;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        grid-template-columns: 1.2fr 1fr;
+        gap: 3rem;
+        min-height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 600px;
+    }
+
+    .hero-image,
+    .image-placeholder {
+        min-height: 420px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .toolbar {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #members.list {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    #members.list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1.3fr 1.2fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.85rem 1rem;
+    }
+}
+
+
+/* .............   LARGE DESKTOP  ................ */
+
+@media only screen and (min-width: 1024px) {
+
+    main {
+        padding: 2rem;
+    }
+
+    .navigation a {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .quick-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

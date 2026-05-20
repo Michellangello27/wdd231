@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "Inka Travel Group",
+            "address": "Av. El Sol 245, Cusco, Peru",
+            "phone": "+51 84 123 456",
+            "website": "https://www.inkatravelgroup.com",
+            "image": "images/inka-travel.webp",
+            "membership": 3,
+            "description": "Premium tourism operator specializing in cultural tours, trekking, and travel experiences across Cusco and the Sacred Valley."
+        },
+        {
+            "name": "Cusco Artisan Market",
+            "address": "San Blas District, Cusco, Peru",
+            "phone": "+51 84 234 567",
+            "website": "https://www.cuscoartisanmarket.com",
+            "image": "images/artisan-market.webp",
+            "membership": 2,
+            "description": "Collective marketplace supporting local artisans, handcrafted products, textiles, ceramics, and cultural commerce."
+        },
+        {
+            "name": "Sacred Valley Logistics",
+            "address": "Av. Industrial 120, Wanchaq, Cusco, Peru",
+            "phone": "+51 84 345 678",
+            "website": "https://www.sacredvalleylogistics.com",
+            "image": "images/sacred-logistics.webp",
+            "membership": 1,
+            "description": "Regional transportation and logistics services for business supply chains and distribution networks."
+        },
+        {
+            "name": "Andes Cacao Export",
+            "address": "Calle Comercio 88, Cusco, Peru",
+            "phone": "+51 84 456 789",
+            "website": "https://www.andescacaoexport.com",
+            "image": "images/andes-cacao.webp",
+            "membership": 3,
+            "description": "Exporter of premium Peruvian cacao and fine chocolate products, supporting sustainable agriculture and international trade partnerships."
+        },
+        {
+            "name": "Qorikancha Tech Solutions",
+            "address": "Technology Hub, Cusco Business Center",
+            "phone": "+51 84 567 890",
+            "website": "https://www.qorikanchatech.com",
+            "image": "images/qorikancha-tech.webp",
+            "membership": 2,
+            "description": "Digital transformation services including software development, cloud solutions, and business automation."
+        },
+        {
+            "name": "Machu Picchu Hospitality Group",
+            "address": "Historic Center, Cusco, Peru",
+            "phone": "+51 84 678 901",
+            "website": "https://www.mphospitality.com",
+            "image": "images/machu-hospitality.webp",
+            "membership": 3,
+            "description": "Hospitality management company offering boutique hotel experiences, tourism partnerships, and guest services."
+        },
+        {
+            "name": "Cusco Builders Association",
+            "address": "Zona Industrial Norte, Cusco, Peru",
+            "phone": "+51 84 789 012",
+            "website": "https://www.cuscobuilders.org",
+            "image": "images/cusco-builders.webp",
+            "membership": 1,
+            "description": "Construction and infrastructure network promoting development, partnerships, and engineering collaboration."
+        },
+        {
+            "name": "Cusco Green Energy Solutions",
+            "address": "Av. de la Cultura 510, Cusco, Peru",
+            "phone": "+51 84 890 123",
+            "website": "https://www.cuscogreenenergy.com",
+            "image": "images/cusco-green-energy.webp",
+            "membership": 2,
+            "description": "Renewable energy consulting and implementation services supporting sustainable business operations throughout the Cusco region."
+        }
+    ]
+}
