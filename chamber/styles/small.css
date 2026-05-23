@@ -188,6 +188,18 @@ header {
     background: rgba(0, 0, 0, 0.04);
 }
 
+.navigation a.active,
+.navigation a[aria-current="page"] {
+    background: var(--primary-color);
+    color: white;
+    border-radius: 6px;
+    border-bottom: 4px solid var(--accent-color);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
 .disabled-link {
     color: #6b7280;
     cursor: not-allowed;
@@ -222,47 +234,50 @@ header {
 /* ...............  MAIN  ................ */
 
 main {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
 
 
-/* ..............  HERO  ................. */
+/* .............. HERO ................. */
 
 .hero {
-    display: grid;
-    gap: 2rem;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.hero-content p {
-    color: var(--muted-text);
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin: 1.5rem 0 2.5rem;
 }
 
 .hero-image {
-    min-height: 280px;
+    position: relative;
+    width: 100%;
+    min-height: 260px;
 }
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 
 .image-placeholder {
     background: #dbe4ee;
     border: 2px dashed var(--secondary-color);
-    min-height: 280px;
+    width: 100%;
+    min-height: 260px;
     display: grid;
     place-items: center;
     color: var(--primary-color);
     font-weight: 600;
     text-align: center;
     padding: 1rem;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2;
 }
 
 
@@ -312,10 +327,37 @@ main {
 .portal-card,
 .member-card {
     background: var(--surface-color);
-    padding: 1.5rem;
+    padding: 1.75rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
+}
+
+/* ............... FEATURED BUSINESS IMAGE ALIGNMENT ............... */
+
+.spotlight-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-image img {
+    width: 100%;
+    max-width: 170px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* ............... FOR SPOTLIGHT TITLE CONTROL ............... */
+
+.spotlight-content h3 {
+    font-size: 1.55rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    min-height: 3.8rem;
+    text-align: center;
 }
 
 .portal-card a,
@@ -345,12 +387,44 @@ main {
 }
 
 
-/* ............. WEATHER  ........... */
+/* ................ WEATHER ............. */
 
 #current-weather,
 #weather-forecast {
     color: var(--muted-text);
     font-size: 1rem;
+}
+
+
+/* ......... WEATHER LAYOUT CONTROL ...... */
+
+.weather-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.weather-icon img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.weather-details {
+    flex: 1;
+}
+
+.weather-details p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
+.weather-temp {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: var(--text-color);
 }
 
 
@@ -486,32 +560,90 @@ main {
 }
 
 
-/* ............ FOOTER  ............ */
+/* ............ FOOTER ............ */
 
 footer {
     background: var(--primary-color);
     color: white;
     padding: 2rem 1rem;
     margin-top: 3rem;
+
+    display: grid;
+    gap: 2rem;
+    text-align: center;
 }
+
+
+/* ........ CONTACT ........ */
+
+.footer-contact p,
+.footer-project p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-contact strong {
+    font-size: 1rem;
+}
+
+
+/* ........ SOCIAL ........ */
 
 .footer-social {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 .footer-social a {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.5rem 0.8rem;
-    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-info,
-.footer-modified {
+.footer-social img {
+    width: 36px;
+    height: 36px;
+}
+
+
+/* ........ PROJECT ........ */
+
+.footer-project {
     text-align: center;
-    font-size: 0.95rem;
+}
+
+
+/* ........ EXTRA SMALL ........ */
+
+@media (max-width: 360px) {
+    footer {
+        padding: 1.5rem 0.75rem;
+        gap: 1.5rem;
+    }
+
+    .footer-contact p,
+    .footer-project p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .footer-social {
+        gap: 1rem;
+    }
+
+    .footer-social img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* ........ SPOTLIGHT TITLE CONTROL ........ */
+
+    .spotlight-content h3 {
+        font-size: 1.35rem;
+        min-height: 3.4rem;
+        line-height: 1.15;
+    }
 }

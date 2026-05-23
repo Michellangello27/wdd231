@@ -9,25 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Business directory of the Cusco Chamber of Commerce featuring local businesses, services, and membership information.">
+        content="Official homepage of the Cusco Chamber of Commerce featuring local business events, community highlights, weather updates, and membership opportunities.">
     <meta name="author" content="Miguel Ángel Cornejo Durand">
 
 
     <!-- ........... OPEN GRAPH SOCIAL META ........... -->
 
-    <meta property="og:title" content="Cusco Chamber of Commerce | Directory">
+    <meta property="og:title" content="Cusco Chamber of Commerce | Home">
     <meta property="og:description"
-        content="Explore businesses and chamber members in the Cusco Chamber of Commerce business directory.">
+        content="Connect with the Cusco Chamber of Commerce to discover local business events, weather updates, featured members, and opportunities to grow your business community.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://michellangello27.github.io/wdd231/chamber/images/social-preview.webp">
-    <meta property="og:url" content="https://michellangello27.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://michellangello27.github.io/wdd231/chamber/index.html">
 
 
     <!-- ............. PAGE TITLE & FAVICON ........... -->
 
-    <title>Cusco Chamber of Commerce | Directory</title>
+    <title>Cusco Chamber of Commerce | Home</title>
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 
 
     <!-- ............. GOOGLE FONTS ........... -->
@@ -50,13 +51,11 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/featured.js" defer></script>
 </head>
 
 <body>
-
-    <!-- ........... HEADER ........... -->
 
     <header>
         <div class="header-container">
@@ -73,67 +72,113 @@
             </a>
 
 
-            <!-- ........... MOBILE MENU BUTTON ........... -->
-
             <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="primary-navigation">
                 ☰
             </button>
 
-
-            <!-- ............. PRIMARY NAVIGATION ........... -->
-
             <nav id="primary-navigation" class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active" aria-current="page" >Directory</a></li>
+                    <li>
+                        <a href="index.html" class="active" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a role="link" class="disabled-link" aria-disabled="true" tabindex="-1">About</a></li>
-                    <li><a role="link" class="disabled-link" aria-disabled="true" tabindex="-1">Podcast</a></li>
-                    <li><a role="link" class="disabled-link" aria-disabled="true" tabindex="-1">Events</a></li>
+                    <li><a href="#" class="disabled-link" aria-disabled="true">About</a></li>
+                    <li><a href="#" class="disabled-link" aria-disabled="true">Podcast</a></li>
+                    <li><a href="#" class="disabled-link" aria-disabled="true">Events</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
 
-
-    <!-- ............ MAIN CONTENT ........... -->
-
     <main>
 
-        <!-- ............ DIRECTORY INTRO ........... -->
+        <!-- HERO -->
 
-        <section class="directory-intro">
-            <h1>Business Directory</h1>
+        <section class="hero">
 
-            <p>
-                Explore businesses, organizations, and chamber members serving
-                the Cusco community. Switch between grid and list views to browse
-                directory listings.
-            </p>
+            <div class="hero-image">
+
+                <img src="images/social-preview.webp" alt="Cusco Chamber of Commerce business community hero image"
+                    width="1200" height="630" loading="eager" decoding="async">
+
+                <a href="join.html" class="primary-btn hero-cta">
+                    Become a Member
+                </a>
+
+            </div>
+
         </section>
 
 
-        <!-- ............. VIEW TOGGLE CONTROLS ........... -->
+        <!-- PAGE TITLE -->
 
-        <section class="toolbar" aria-label="Directory view controls">
-            <button id="grid-view" type="button">Grid View</button>
-            <button id="list-view" type="button">List View</button>
+        <section>
+            <h1>Home</h1>
         </section>
 
 
-        <!-- .............. MEMBERS DIRECTORY ........... -->
+        <!-- EVENTS + WEATHER -->
 
-        <section id="members" class="grid" aria-label="Business directory listings">
-            <!-- In this part, members.js inserts the listing or content -->
+        <section class="home-grid">
+
+            <!-- EVENTS -->
+
+            <article class="card">
+                <h2>Current Events</h2>
+
+                <ul class="events-list">
+                    <li>Entrepreneur Networking Breakfast — 7 Nov</li>
+                    <li>Digital Marketing Workshop — June 4</li>
+                    <li>Small Business Leadership Forum — Sept 27</li>
+                </ul>
+            </article>
+
+
+            <!-- CURRENT WEATHER -->
+
+            <article class="card">
+                <h2>Current Weather</h2>
+
+                <div id="current-weather">
+                    <!-- weather.js renders here -->
+                </div>
+            </article>
+
+
+            <!-- FORECAST -->
+
+            <article class="card">
+                <h2>Weather Forecast</h2>
+
+                <div id="weather-forecast">
+                    <!-- weather.js renders here -->
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- FEATURED MEMBERS -->
+
+        <section>
+
+            <h2>Featured Businesses</h2>
+
+            <div id="featured-businesses" class="featured-grid">
+                <!-- featured.js renders here -->
+            </div>
+
         </section>
 
     </main>
 
-
- <!-- ........... FOOTER ........... -->
+    <!-- ........... FOOTER ........... -->
 
     <footer>
 
@@ -186,6 +231,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>
