@@ -391,7 +391,6 @@ main {
 
 #current-weather,
 #weather-forecast {
-    color: var(--muted-text);
     font-size: 1rem;
 }
 
@@ -405,8 +404,8 @@ main {
 }
 
 .weather-icon img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     display: block;
 }
 

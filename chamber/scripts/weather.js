@@ -1,112 +1,111 @@
-/* ..........  WEATHER MODULE / MY API-READY MOCK VERSION  ........... */
+/* .......... OPENWEATHER API CONFIG .......... */
 
 const currentWeatherContainer = document.querySelector("#current-weather");
 const weatherForecastContainer = document.querySelector("#weather-forecast");
 
+const apiKey = "a1725a96c9a460779f3148cadcfdbe09";
 
-/* .........  MOCK DATA (OpenWeather API Shape)  ......... */
+const lat = -13.5319;   // for Cusco
+const lon = -71.9675;
 
-const mockCurrentWeather = {
-    main: {
-        temp: 18,
-        temp_max: 22,
-        temp_min: 11,
-        humidity: 52
-    },
-    weather: [
-        {
-            description: "Partly Cloudy",
-            icon: "03d"
-        }
-    ],
-    sys: {
-        sunrise: "6:08 AM",
-        sunset: "5:42 PM"
-    },
-    name: "Cusco"
-};
+const currentWeatherUrl =
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
-const mockForecast = {
-    list: [
-        {
-            label: "Today",
-            temp: 19
-        },
-        {
-            label: "Wednesday",
-            temp: 17
-        },
-        {
-            label: "Thursday",
-            temp: 16
-        }
-    ]
-};
+const forecastUrl =
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
 
-/* .........  DATA PROVIDERS (For Replace with API Later)  ....... */
+/* .......... FETCH CURRENT WEATHER .......... */
 
 async function getCurrentWeatherData() {
-    return mockCurrentWeather;
+    const response = await fetch(currentWeatherUrl);
+
+    if (!response.ok) {
+        throw new Error("Current weather request failed");
+    }
+
+    return await response.json();
 }
+
+
+/* .......... FETCH FORECAST .......... */
 
 async function getForecastData() {
-    return mockForecast;
+    const response = await fetch(forecastUrl);
+
+    if (!response.ok) {
+        throw new Error("Forecast request failed");
+    }
+
+    const data = await response.json();
+
+    const dailyForecast = data.list.filter(item =>
+        item.dt_txt.includes("12:00:00")
+    );
+
+    return dailyForecast.slice(0, 3);
 }
 
 
-/* .............  HOW SHOW WEATHER RENDER  ............ */
+/* .......... CURRENT WEATHER RENDER .......... */
 
 function displayCurrentWeather(data) {
     if (!currentWeatherContainer) return;
 
-    const iconCode = data.weather[0].icon;
-    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const desc = data.weather[0].description;
+
+    const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], {
+        hour: "numeric",
+        minute: "2-digit"
+    });
+
+    const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString([], {
+        hour: "numeric",
+        minute: "2-digit"
+    });
 
     currentWeatherContainer.innerHTML = `
-        <div class="weather-block">
-            <div class="weather-layout">
+        <div class="weather-layout">
+            <div class="weather-icon">
+                <img src="${iconsrc}" alt="${desc}">
+            </div>
 
-                <div class="weather-icon">
-                    <img src="${iconUrl}" alt="${data.weather[0].description}">
-                </div>
-
-                <div class="weather-details">
-                    <p class="weather-temp">
-                        ${Math.round(data.main.temp)}°C
-                    </p>
-
-                    <p>${data.weather[0].description}</p>
-                    <p><strong>Máxima:</strong> ${Math.round(data.main.temp_max)}°C</p>
-                    <p><strong>Mínima:</strong> ${Math.round(data.main.temp_min)}°C</p>
-                    <p><strong>Humedad:</strong> ${data.main.humidity}%</p>
-                    <p><strong>Amanecer:</strong> ${data.sys.sunrise}</p>
-                    <p><strong>Puesta de sol:</strong> ${data.sys.sunset}</p>
-                </div>
-
+            <div class="weather-details">
+                <p class="weather-temp">${Math.round(data.main.temp)}°C</p>
+                <p>${desc}</p>
+                <p><strong>High:</strong> ${Math.round(data.main.temp_max)}°C</p>
+                <p><strong>Low:</strong> ${Math.round(data.main.temp_min)}°C</p>
+                <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+                <p><strong>Sunrise:</strong> ${sunrise}</p>
+                <p><strong>Sunset:</strong> ${sunset}</p>
             </div>
         </div>
     `;
 }
 
-/* ..................  FORECAST RENDER  ................. */
+/* .......... FORECAST RENDER .......... */
 
 function displayForecast(data) {
     if (!weatherForecastContainer) return;
 
-    weatherForecastContainer.innerHTML = data.list
-        .map(item => `
+    weatherForecastContainer.innerHTML = `
+
+        ${data.map(item => `
             <div class="forecast-item">
                 <p>
-                    <strong>${item.label}:</strong> ${item.temp}°C
+                    <strong>${new Date(item.dt_txt).toLocaleDateString("en-US", {
+        weekday: "long"
+    })}:</strong>
+                    ${Math.round(item.main.temp)}°C
                 </p>
             </div>
-        `)
-        .join("");
+        `).join("")}
+    `;
 }
 
 
-/* ...........  INIT  .............. */
+/* .......... INIT .......... */
 
 async function initWeather() {
     try {
