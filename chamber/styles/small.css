@@ -259,7 +259,6 @@ main {
     object-fit: cover;
 }
 
-
 .image-placeholder {
     background: #dbe4ee;
     border: 2px dashed var(--secondary-color);
@@ -360,6 +359,14 @@ main {
     text-align: center;
 }
 
+.membership-level {
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0.25rem 0 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .portal-card a,
 .member-card a {
     color: var(--secondary-color);
@@ -446,7 +453,7 @@ main {
 }
 
 
-/* .......... DIRECTORY TOOLBAR ......... */
+/* ....... DIRECTORY TOOLBAR ......... */
 
 .toolbar {
     display: flex;
@@ -480,7 +487,7 @@ main {
 }
 
 
-/* ............ MEMBERS GRID  ............. */
+/* ....... MEMBERS GRID  ........... */
 
 #members.grid {
     display: grid;
@@ -515,7 +522,7 @@ main {
 }
 
 
-/* ........  MEMBERS LIST (MOBILE)  ............ */
+/* ......  MEMBERS LIST (MOBILE)  ......... */
 
 #members.list {
     display: flex;
@@ -559,7 +566,7 @@ main {
 }
 
 
-/* ............ FOOTER ............ */
+/* ............ FOOTER .......... */
 
 footer {
     background: var(--primary-color);
@@ -573,7 +580,7 @@ footer {
 }
 
 
-/* ........ CONTACT ........ */
+/* ..... CONTACT ........ */
 
 .footer-contact p,
 .footer-project p {
@@ -587,7 +594,7 @@ footer {
 }
 
 
-/* ........ SOCIAL ........ */
+/* ........ SOCIAL ..... */
 
 .footer-social {
     display: flex;
@@ -608,14 +615,14 @@ footer {
 }
 
 
-/* ........ PROJECT ........ */
+/* ........ PROJECT ...... */
 
 .footer-project {
     text-align: center;
 }
 
 
-/* ........ EXTRA SMALL ........ */
+/* ...... EXTRA SMALL ........ */
 
 @media (max-width: 360px) {
     footer {
@@ -638,7 +645,7 @@ footer {
         height: 32px;
     }
 
-    /* ........ SPOTLIGHT TITLE CONTROL ........ */
+    /* ...... SPOTLIGHT TITLE CONTROL ........ */
 
     .spotlight-content h3 {
         font-size: 1.35rem;
@@ -646,3 +653,197 @@ footer {
         line-height: 1.15;
     }
 }
+
+/* ............ JOIN PAGE  ................. */
+
+.join-intro {
+    margin: 2rem 0;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.join-form-section,
+.membership-section {
+    width: 100%;
+}
+
+.membership-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.join-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-form-section label {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+fieldset legend {
+    font-weight: 600;
+}
+
+.membership-fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.membership-fieldset legend {
+    font-weight: 600;
+}
+
+.membership-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.membership-option:last-child {
+    margin-bottom: 0;
+}
+
+.membership-option input[type="radio"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    flex-shrink: 0;
+}
+
+.membership-option label {
+    display: inline;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* ---------- FORM ---------- */
+
+.join-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.join-form-section > form > label:not(.membership-option) {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-weight: 600;
+}
+
+.join-form-section input,
+.join-form-section textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--body-font);
+}
+
+.join-form-section textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.join-form-section fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.join-form-section button {
+    align-self: start;
+}
+
+/* ---------- MEMBERSHIP CARDS ---------- */
+
+.membership-card {
+    text-align: center;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: membershipRise .8s ease forwards;
+}
+
+.membership-card h3 {
+    margin-bottom: .75rem;
+}
+
+.membership-card p {
+    margin-bottom: 1rem;
+}
+
+/* ---------- ANIMATION ---------- */
+
+.card-1 {
+    animation-delay: .2s;
+}
+
+.card-2 {
+    animation-delay: .4s;
+}
+
+.card-3 {
+    animation-delay: .6s;
+}
+
+.card-4 {
+    animation-delay: .8s;
+}
+
+@keyframes membershipRise {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- DIALOG ---------- */
+
+dialog {
+    width: min(90%, 500px);
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, .5);
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+.close-modal {
+    margin-top: 1rem;
+}
+

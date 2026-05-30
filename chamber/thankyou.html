@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ............. META CONFIGURATION ........... -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Thank you for submitting your membership application to the Cusco Chamber of Commerce. Review your application details and next steps.">
+
+    <meta name="author" content="Miguel Ángel Cornejo Durand">
+
+
+    <!-- ........... OPEN GRAPH SOCIAL META ........... -->
+
+    <meta property="og:title" content="Cusco Chamber of Commerce | Thank You">
+
+    <meta property="og:description"
+        content="Thank you for submitting your membership application to the Cusco Chamber of Commerce.">
+
+    <meta property="og:image"
+        content="https://michellangello27.github.io/wdd231/chamber/images/social-preview.webp">
+
+    <meta property="og:url"
+        content="https://michellangello27.github.io/wdd231/chamber/thankyou.html">
+
+
+    <!-- ............. PAGE TITLE & FAVICON ........... -->
+
+    <title>Cusco Chamber of Commerce | Thank You</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+    <!-- ............. GOOGLE FONTS ........... -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ........... STYLESHEETS ........... -->
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <!-- ............ JAVASCRIPT FILES ........... -->
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <!-- ............ BRAND LOGO ........... -->
+
+            <a href="index.html" class="brand" aria-label="Go to Cusco Chamber home page">
+                <img src="images/ccc-logo.webp"
+                    alt="Cusco Chamber of Commerce site logo"
+                    width="60"
+                    height="60"
+                    fetchpriority="high">
+
+                <span class="brand-name">
+                    Cusco Chamber of Commerce
+                </span>
+            </a>
+
+
+            <!-- ........... MOBILE MENU BUTTON ........... -->
+
+            <button id="menu-button"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+
+            <!-- ............. PRIMARY NAVIGATION ........... -->
+
+            <nav id="primary-navigation" class="navigation">
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="directory.html">Directory</a></li>
+
+                    <li><a href="discover.html">Discover</a></li>
+
+                    <li><a href="join.html">Join</a></li>
+
+                    <li>
+                        <a role="link"
+                            class="disabled-link"
+                            aria-disabled="true"
+                            tabindex="-1">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a role="link"
+                            class="disabled-link"
+                            aria-disabled="true"
+                            tabindex="-1">
+                            Podcast
+                        </a>
+                    </li>
+
+                    <li>
+                        <a role="link"
+                            class="disabled-link"
+                            aria-disabled="true"
+                            tabindex="-1">
+                            Events
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ............. THANK YOU MESSAGE ........... -->
+
+        <section class="thankyou-section">
+
+            <h1>Thank You for Your Membership Application!</h1>
+
+            <p>
+                Your application has been successfully submitted to the
+                Cusco Chamber of Commerce. We appreciate your interest in
+                joining our business community.
+            </p>
+
+
+            <!-- ............. APPLICATION SUMMARY ........... -->
+
+            <div class="summary-card">
+
+                <h2>Application Summary</h2>
+
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+
+                <p><strong>Email Address:</strong> <span id="email"></span></p>
+
+                <p><strong>Mobile Phone Number:</strong> <span id="phone"></span></p>
+
+                <p><strong>Organization Name:</strong> <span id="organization"></span></p>
+
+                <p><strong>Membership Level:</strong> <span id="membership"></span></p>
+
+                <p><strong>Application Date:</strong> <span id="timestamp"></span></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ........... FOOTER ........... -->
+
+    <footer>
+
+        <!-- ........... CONTACT INFORMATION ........... -->
+
+        <div class="footer-contact">
+            <p><strong>Cusco Chamber of Commerce</strong></p>
+            <p>Cusco, Peru</p>
+            <p>info@cuscochamber.org</p>
+            <p>+51 984 670 927</p>
+        </div>
+
+
+        <!-- ........... SOCIAL LINKS ........... -->
+
+        <div class="footer-social">
+
+            <a href="https://github.com/Michellangello27/wdd231" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <img src="../images/github-icon.svg" alt="GitHub icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+            <a href="https://www.linkedin.com/in/miguel-angel-cornejo-durand-6bb13530/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="../images/linkedin-icon.svg" alt="LinkedIn icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+            <a href="https://x.com/M_angello27" target="_blank" rel="noopener noreferrer" aria-label="X social profile">
+                <img src="../images/twitter-x-icon.svg" alt="X social icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+        </div>
+
+
+        <!-- ........... PROJECT INFORMATION ........... -->
+
+        <div class="footer-project">
+            <p>WDD231 Class Project</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Miguel Angel Cornejo Durand
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

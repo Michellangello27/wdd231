@@ -59,6 +59,11 @@ function displayFeaturedBusinesses(members) {
         const card = document.createElement("article");
         card.classList.add("member-card", "spotlight-card");
 
+        const membershipLevel =
+            member.membership === 3
+                ? "Gold Member"
+                : "Silver Member";
+
         card.innerHTML = `
             <div class="spotlight-image">
                 <img
@@ -72,6 +77,10 @@ function displayFeaturedBusinesses(members) {
 
             <div class="spotlight-content">
                 <h3>${member.name}</h3>
+
+                <p class="membership-level">
+                    ${membershipLevel}
+                </p>
 
                 <p class="spotlight-tagline">
                     ${member.tagline}
@@ -88,10 +97,12 @@ function displayFeaturedBusinesses(members) {
                 </p>
 
                 <p>
-                    <strong>URL:</strong>
-                    <a href="${member.website}"
+                    <strong>Website:</strong>
+                    <a
+                        href="${member.website}"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                    >
                         Visit Website
                     </a>
                 </p>
@@ -101,7 +112,6 @@ function displayFeaturedBusinesses(members) {
         featuredContainer.appendChild(card);
     });
 }
-
 
 /* ............... INIT .................. */
 

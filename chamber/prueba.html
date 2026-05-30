@@ -1,0 +1,153 @@
+html<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Radio Buttons</title>
+  <style>
+    /* Estilos generales del formulario */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333333;
+      font-size: 1.4rem;
+    }
+
+    p {
+      color: #666666;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    /* Contenedor de cada opción */
+    .radio-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    /* Ocultar el radio button nativo para personalizarlo */
+    .radio-group input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+    }
+
+    /* El círculo personalizado */
+    .radio-custom {
+      height: 20px;
+      width: 20px;
+      background-color: #eee;
+      border-radius: 50%;
+      margin-right: 12px;
+      position: relative;
+      transition: background-color 0.2s, border-color 0.2s;
+      border: 2px solid #ccc;
+    }
+
+    /* Efecto al pasar el cursor */
+    .radio-group:hover input ~ .radio-custom {
+      border-color: #2196F3;
+    }
+
+    /* Estilo cuando el radio button está seleccionado */
+    .radio-group input:checked ~ .radio-custom {
+      background-color: #2196F3;
+      border-color: #2196F3;
+    }
+
+    /* El punto blanco dentro del círculo (oculto por defecto) */
+    .radio-custom:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 5px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: white;
+    }
+
+    /* Mostrar el punto blanco cuando se selecciona */
+    .radio-group input:checked ~ .radio-custom:after {
+      display: block;
+    }
+
+    /* Texto de la etiqueta */
+    .radio-label {
+      color: #444444;
+      font-size: 1rem;
+      user-select: none;
+    }
+
+    /* Botón de envío */
+    .btn-submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-submit:hover {
+      background-color: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form action="#">
+      <h2>Método de envío</h2>
+      <p>Selecciona tu opción preferida:</p>
+
+      <!-- Opción 1 -->
+      <label class="radio-group">
+        <input type="radio" name="envio" value="estandar" checked>
+        <span class="radio-custom"></span>
+        <span class="radio-label">Envío Estándar (Gratis)</span>
+      </label>
+
+      <!-- Opción 2 -->
+      <label class="radio-group">
+        <input type="radio" name="envio" value="rapido">
+        <span class="radio-custom"></span>
+        <span class="radio-label">Envío Rápido ($5.00)</span>
+      </label>
+
+      <!-- Opción 3 -->
+      <label class="radio-group">
+        <input type="radio" name="envio" value="express">
+        <span class="radio-custom"></span>
+        <span class="radio-label">Envío Express ($12.00)</span>
+      </label>
+
+      <button type="submit" class="btn-submit">Continuar</button>
+    </form>
+  </div>
+
+</body>
+</html>

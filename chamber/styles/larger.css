@@ -215,6 +215,27 @@
     }
 
 
+    /* ............ JOIN PAGE DESKTOP ............ */
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .join-form-section {
+        width: 100%;
+    }
+
+    .membership-section {
+        width: 100%;
+    }
+
+    .membership-card {
+        min-height: 180px;
+    }
+
     /* ............ DESKTOP FOOTER ............ */
 
     footer {
@@ -271,4 +292,15 @@
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+
+/* ......  JOIN PAGE DESKTOP ................ */
+
+@media only screen and (min-width: 898px) {
+
+    .join-container {
+        ...
+    }
+
 }
