@@ -302,14 +302,3 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
-/* ......  JOIN PAGE DESKTOP ................ */
-
-@media only screen and (min-width: 898px) {
-
-    .join-container {
-        ...
-    }
-
-}
