@@ -300,7 +300,7 @@ main {
 
 .secondary-btn {
     background: var(--accent-color);
-    color: white;
+    color: var(--text-color);
 }
 
 .primary-btn:hover,
