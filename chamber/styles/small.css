@@ -753,13 +753,7 @@ fieldset legend {
 
 /* ---------- FORM ---------- */
 
-.join-form-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.join-form-section > form > label:not(.membership-option) {
+.join-form-section>form>label:not(.membership-option) {
     display: flex;
     flex-direction: column;
     gap: .3rem;
@@ -864,4 +858,3 @@ dialog h2 {
 .close-modal {
     margin-top: 1rem;
 }
-
