@@ -236,6 +236,15 @@
         min-height: 180px;
     }
 
+    
+    /* ............. THANK YOU PAGE ............. */
+
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 1.25rem;
+    }
+
     /* ............ DESKTOP FOOTER ............ */
 
     footer {

@@ -9,6 +9,9 @@ document.querySelector("#firstName").textContent =
 document.querySelector("#lastName").textContent =
     params.get("lastName") || "Not provided";
 
+document.querySelector("#organizationTitle").textContent =
+    params.get("organizationTitle") || "Not provided";
+    
 document.querySelector("#email").textContent =
     params.get("email") || "Not provided";
 

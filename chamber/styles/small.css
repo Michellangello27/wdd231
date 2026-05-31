@@ -522,6 +522,24 @@ main {
 }
 
 
+/* ............. THANK YOU PAGE ............. */
+
+.summary-card {
+    margin-top: 2rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.summary-grid p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
 /* ......  MEMBERS LIST (MOBILE)  ......... */
 
 #members.list {
