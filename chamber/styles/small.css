@@ -3,7 +3,7 @@
 :root {
     --primary-color: #721c24;
     --secondary-color: #1b4332;
-    --accent-color: #d4a373;
+    --accent-color: #D4A373;
     --background-color: #fcfbf7;
     --surface-color: #ffffff;
     --text-color: #212529;
@@ -299,8 +299,8 @@ main {
 }
 
 .secondary-btn {
-    background: var(--accent-color);
-    color: var(--text-color);
+    background: var(--secondary-color);
+    color: white;
 }
 
 .primary-btn:hover,
