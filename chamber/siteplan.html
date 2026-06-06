@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+```html
+<head>
+
+    <!-- ............. META CONFIGURATION ........... -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Walking with Purpose: Beyond the Veil is an educational WDD231 project exploring the covenant path, temple ordinances, family history work, and eternal families through a modern and interactive website experience.">
+
+    <meta name="author"
+        content="Miguel Ángel Cornejo Durand">
+
+    <meta name="keywords"
+        content="Temple, Family History, FamilySearch, Covenant Path, Eternal Families, Temples of The Church of Jesus Christ of Latter-day Saints, WDD231, Site Plan">
+
+
+    <!-- ........... OPEN GRAPH SOCIAL META ........... -->
+
+    <meta property="og:title"
+        content="Walking with Purpose | Site Plan">
+
+    <meta property="og:description"
+        content="Educational website project focused on temples, family history, sacred ordinances, and eternal families.">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:image"
+        content="images/hero-arequipa.webp">
+
+    <meta property="og:url"
+        content="https://michellangello27.github.io/wdd231/siteplan.html">
+
+
+    <!-- ............. PAGE TITLE & FAVICON ........... -->
+
+    <title>
+        Walking with Purpose | Site Plan | WDD231
+    </title>
+
+    <link rel="icon"
+        href="images/favicon.ico"
+        type="image/x-icon">
+
+
+    <!-- ............. GOOGLE FONTS ........... -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ........... STYLESHEETS ........... -->
+
+    <link rel="stylesheet"
+        href="styles/siteplan.css">
+
+
+    <!-- ............ JAVASCRIPT FILES ........... -->
+
+    <script src="scripts/siteplan.js"
+        defer></script>
+
+    <script src="scripts/navigation.js"
+        defer></script>
+
+    <script src="scripts/date.js"
+        defer></script>
+
+</head>
+
+
+<body>
+
+   ```html
+<header>
+
+    <div class="header-container">
+
+        <!-- ............ BRAND LOGO ........... -->
+
+        <a href="siteplan.html"
+            class="brand"
+            aria-label="Go to Walking with Purpose site plan">
+
+            <img src="images/logo.webp"
+                alt="Walking with Purpose project logo"
+                width="70"
+                height="70"
+                fetchpriority="high">
+
+            <span class="brand-name">
+                Walking with Purpose
+            </span>
+
+        </a>
+
+
+        <!-- ........... MOBILE MENU BUTTON ........... -->
+
+        <button id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+
+            ☰
+
+        </button>
+
+
+        <!-- ............. PRIMARY NAVIGATION ........... -->
+
+        <nav id="primary-navigation"
+            class="navigation">
+
+            <ul>
+
+                <li>
+                    <a href="#site-name">
+                        Site Name
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#site-purpose">
+                        Purpose
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#scenarios">
+                        Scenarios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#wireframes">
+                        Wireframes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resources">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+```
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <div class="hero-image">
+
+                <img src="images/social-preview.webp" alt="Cusco Chamber of Commerce business community hero image"
+                    width="1200" height="630" loading="eager" decoding="async">
+
+                <a href="#featured-businesses" class="primary-btn hero-cta">
+                    Become a Member
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAGE TITLE -->
+
+        <div class="join-intro">
+            <h1>Join the Chamber</h1>
+
+            <p>
+                Become a member of the Cusco Chamber of Commerce and connect with
+                business leaders, networking opportunities, professional development
+                resources, and community initiatives designed to help your
+                organization grow.
+            </p>
+        </div>
+
+        <div class="join-container">
+
+            <!-- MEMBERSHIP APPLICATION FORM -->
+
+            <section class="join-form-section">
+
+                <h2>Membership Application Form</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <h3 class="form-section-title">Personal Information</h3>
+
+                    <label for="first-name">
+                        First Name *
+                        <input type="text" id="first-name" name="firstName" title="Applicant First Name"
+                            autocomplete="given-name" required>
+                    </label>
+
+                    <label for="last-name">
+                        Last Name *
+                        <input type="text" id="last-name" name="lastName" title="Applicant Last Name"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label for="email">
+                        Email Address *
+                        <input type="email" id="email" name="email" title="Applicant Email Address" autocomplete="email"
+                            placeholder="example@email.com" required>
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number *
+                        <input type="tel" id="phone" name="phone" title="Applicant Mobile Phone Number"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <h3 class="form-section-title">Organization Information</h3>
+
+                    <label for="organization-title">
+                        Organizational Title
+
+                        <input type="text" id="organization-title" name="organizationTitle"
+                            title="Applicant Organizational Title" autocomplete="organization-title"
+                            pattern="[A-Za-z\s\-]{7,}" placeholder="Marketing Director">
+                    </label>
+
+                    <label for="organization">
+                        Business / Organization Name *
+
+                        <input type="text" id="organization" name="organization" title="Business or Organization Name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label for="description">
+                        Business Description
+
+                        <textarea id="description" name="description" title="Business Description" rows="5"></textarea>
+                    </label>
+
+                    <h3 class="form-section-title">Membership Selection</h3>
+
+                    <fieldset class="membership-fieldset">
+
+                        <legend>Membership Level Selection</legend>
+
+                        <div class="membership-option">
+                            <input type="radio" id="np-membership" name="membershipLevel" value="NP Membership">
+
+                            <label for="np-membership">
+                                NP Membership
+                            </label>
+                        </div>
+
+                        <div class="membership-option">
+                            <input type="radio" id="bronze-membership" name="membershipLevel" value="Bronze Membership">
+
+                            <label for="bronze-membership">
+                                Bronze Membership
+                            </label>
+                        </div>
+
+                        <div class="membership-option">
+                            <input type="radio" id="silver-membership" name="membershipLevel" value="Silver Membership">
+
+                            <label for="silver-membership">
+                                Silver Membership
+                            </label>
+                        </div>
+
+                        <div class="membership-option">
+                            <input type="radio" id="gold-membership" name="membershipLevel" value="Gold Membership">
+
+                            <label for="gold-membership">
+                                Gold Membership
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit" class="primary-btn">
+                        Submit Membership Application
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- MEMBERSHIP LEVELS -->
+
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+                <article class="membership-card card card-1">
+                    <h3>NP Membership Level</h3>
+
+                    <button type="button" id="open-np" class="secondary-btn">
+                        Learn More
+                    </button>
+                </article>
+
+                <article class="membership-card card card-2">
+                    <h3>Bronze Membership Level</h3>
+
+                    <button type="button" id="open-bronze" class="secondary-btn">
+                        Learn More
+                    </button>
+                </article>
+
+                <article class="membership-card card card-3">
+                    <h3>Silver Membership Level</h3>
+
+                    <button type="button" id="open-silver" class="secondary-btn">
+                        Learn More
+                    </button>
+                </article>
+
+                <article class="membership-card card card-4">
+                    <h3>Gold Membership Level</h3>
+
+                    <button type="button" id="open-gold" class="secondary-btn">
+                        Learn More
+                    </button>
+                </article>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- NP MEMBERSHIP MODAL -->
+
+    <dialog id="np-modal">
+
+        <h2>NP Membership Benefits</h2>
+        <p>
+            Designed for non-profit organizations seeking
+            chamber participation and networking opportunities.
+        </p>
+        <ul>
+            <li>No membership fee.</li>
+            <li>Participation in chamber events.</li>
+            <li>Community networking opportunities.</li>
+            <li>Access to chamber resources.</li>
+        </ul>
+
+        <button class="close-modal">
+            Close
+        </button>
+
+    </dialog>
+
+
+    <!-- BRONZE MEMBERSHIP MODAL -->
+
+    <dialog id="bronze-modal">
+
+        <h2>Bronze Membership Benefits</h2>
+        <p>
+            Entry-level membership designed to help businesses
+            increase visibility and community engagement.
+        </p>
+
+        <ul>
+            <li>Directory listing.</li>
+            <li>Business networking opportunities.</li>
+            <li>Professional development events.</li>
+            <li>Community visibility.</li>
+        </ul>
+
+        <button class="close-modal">
+            Close
+        </button>
+
+    </dialog>
+
+
+    <!-- SILVER MEMBERSHIP MODAL -->
+
+    <dialog id="silver-modal">
+
+        <h2>Silver Membership Benefits</h2>
+        <p>
+            Enhanced membership with additional promotional
+            opportunities and member benefits.
+        </p>
+        <ul>
+            <li>All Bronze benefits.</li>
+            <li>Featured promotional opportunities.</li>
+            <li>Discounted event participation.</li>
+            <li>Advanced business workshops.</li>
+        </ul>
+
+        <button class="close-modal">
+            Close
+        </button>
+
+    </dialog>
+
+
+    <!-- GOLD MEMBERSHIP MODAL -->
+
+    <dialog id="gold-modal">
+
+        <h2>Gold Membership Benefits</h2>
+        <p>
+            Premium membership offering maximum visibility,
+            sponsorship opportunities, and featured placement.
+        </p>
+        <ul>
+            <li>All Silver benefits.</li>
+            <li>Homepage spotlight placement.</li>
+            <li>Premium advertising opportunities.</li>
+            <li>Priority sponsorship recognition.</li>
+        </ul>
+
+        <button class="close-modal">
+            Close
+        </button>
+
+    </dialog>
+
+    <!-- ........... FOOTER ........... -->
+
+    <footer>
+
+        <!-- ........... CONTACT INFORMATION ........... -->
+
+        <div class="footer-contact">
+            <p><strong>Cusco Chamber of Commerce</strong></p>
+            <p>Cusco, Peru</p>
+            <p>info@cuscochamber.org</p>
+            <p>+51 984 670 927</p>
+        </div>
+
+
+        <!-- ........... SOCIAL LINKS ........... -->
+
+        <div class="footer-social">
+
+            <a href="https://github.com/Michellangello27/wdd231" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <img src="../images/github-icon.svg" alt="GitHub icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+            <a href="https://www.linkedin.com/in/miguel-angel-cornejo-durand-6bb13530/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="../images/linkedin-icon.svg" alt="LinkedIn icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+            <a href="https://x.com/M_angello27" target="_blank" rel="noopener noreferrer" aria-label="X social profile">
+                <img src="../images/twitter-x-icon.svg" alt="X social icon" width="36" height="36" loading="lazy"
+                    decoding="async">
+            </a>
+
+        </div>
+
+
+        <!-- ........... PROJECT INFORMATION ........... -->
+
+        <div class="footer-project">
+            <p>WDD231 Class Project</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Miguel Angel Cornejo Durand
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

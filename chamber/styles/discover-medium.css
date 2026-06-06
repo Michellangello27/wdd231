@@ -1,0 +1,60 @@
+/* ............ MEDIUM VIEW ............ */
+
+@media screen and (min-width: 641px) {
+
+    /* .......... DISCOVER CARD ............ */
+
+    .discover-card {
+
+        display: grid;
+
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo location"
+            "photo button";
+
+        grid-template-columns: minmax(220px, 300px) 1fr;
+
+        gap: 2rem;
+
+        align-items: start;
+
+        margin-bottom: 0.5rem;
+    }
+
+
+    /* ......... GRID AREAS ............ */
+
+    .card-name {
+        grid-area: name;
+    }
+
+    .card-photo {
+        grid-area: photo;
+    }
+
+    .card-description {
+        grid-area: description;
+    }
+
+    .card-location {
+        grid-area: location;
+    }
+
+    .card-button {
+        grid-area: button;
+    }
+
+
+    /* .......... IMAGE SIZE ............ */
+
+   .card-photo img {
+
+    width: 100%;
+    max-width: 300px;
+
+    height: 200px;
+
+    object-fit: cover;
+}

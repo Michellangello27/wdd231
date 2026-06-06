@@ -840,7 +840,7 @@ fieldset legend {
 /* ---------- DIALOG ---------- */
 
 dialog {
-    width: min(90%, 500px);
+    width: min(90%, 600px);
     border: none;
     border-radius: 12px;
     padding: 2rem;
