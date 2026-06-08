@@ -16,7 +16,8 @@
 
         grid-template-columns: minmax(220px, 300px) 1fr;
 
-        gap: 2rem;
+        column-gap: 1.5rem;
+        row-gap: 0.25rem;
 
         align-items: start;
 
@@ -24,33 +25,32 @@
     }
 }
 
+/* ......... GRID AREAS ............ */
 
-    /* ......... GRID AREAS ............ */
+.card-name {
+    grid-area: name;
+}
 
-    .card-name {
-        grid-area: name;
-    }
+.card-photo {
+    grid-area: photo;
+}
 
-    .card-photo {
-        grid-area: photo;
-    }
+.card-description {
+    grid-area: description;
+}
 
-    .card-description {
-        grid-area: description;
-    }
+.card-location {
+    grid-area: location;
+}
 
-    .card-location {
-        grid-area: location;
-    }
-
-    .card-button {
-        grid-area: button;
-    }
+.card-button {
+    grid-area: button;
+}
 
 
-    /* .......... IMAGE SIZE ............ */
+/* .......... IMAGE SIZE ............ */
 
-   .card-photo img {
+.card-photo img {
 
     width: 100%;
     max-width: 300px;
