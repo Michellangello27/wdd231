@@ -68,7 +68,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(30, 58, 95, 0.10);
+    background: rgba(30, 58, 95, 0.07);
     z-index: 0;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .hero-content h1 {
-    color: var(--inspiration-gold);
+    color: #10253D;
     font-family: "Merriweather", serif;
     font-size: 1.30rem;
     line-height: 1.1;
