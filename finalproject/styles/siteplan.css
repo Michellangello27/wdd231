@@ -1,23 +1,54 @@
 /* ............ SITE PLAN VARIABLES ........... */
 
 :root {
-
+    /* ....... BRAND COLORS ........ */
+    /* Temple Blue
+       Header and navigation
+       Main headings and section titles
+       Footer background
+       Primary interface elements
+    */
     --temple-blue: #1E3A5F;
+
+    /* Inspiration Gold
+       Call-to-action buttons
+       Icons and highlights
+       Important visual accents
+       Featured content emphasis
+    */
     --inspiration-gold: #D4AF37;
+
+    /* ........ NEUTRAL COLORS ....... */
+    /* White
+       Main page background
+       Content areas
+       Readability sections
+    */
     --white: #FFFFFF;
+
+    /* Light Gray
+       Cards and panels
+       Alternate section backgrounds
+       Informational containers
+    */
     --platinum: #F5F7FA;
+
+    /* Graphite
+       Body text
+       General content
+       Interface readability
+    */
     --graphite: #2C2C2C;
 
-    --shadow-small:
+    /* ......... EFFECTS ....... */
+    --shadow-sm:
         0 4px 12px rgba(0, 0, 0, 0.08);
-
-    --shadow-medium:
+    --shadow-md:
         0 8px 24px rgba(0, 0, 0, 0.12);
 
+    /* ........ LAYOUT ........ */
     --max-width: 1200px;
-
 }
-
 
 /* ............ HERO SECTION ........... */
 .hero {
@@ -215,21 +246,195 @@ dialog p {
     cursor: pointer;
 }
 
+/* ..........5.- COLOR SCHEME .......... */
+
+#color-schema {
+    margin-top: 4rem;
+    padding: 2rem;
+
+    background-color: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+#color-schema h2 {
+    margin-bottom: 2rem;
+}
+
+.color-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    background-color: var(--background-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.color-card:last-child {
+    margin-bottom: 0;
+}
+
+.color-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.color-header h3 {
+    margin: 0;
+}
+
+.color-card p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.color-swatch {
+    display: block;
+    width: 80px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.temple-blue {
+    background-color: #1E3A5F;
+}
+
+.inspiration-gold {
+    background-color: #D4AF37;
+}
+
+.white-color {
+    background-color: #FFFFFF;
+}
+
+.light-gray {
+    background-color: #F5F7FA;
+}
+
+
+/* .......... TYPOGRAPHY .......... */
+
+#typography {
+    margin-top: 4rem;
+    padding: 2rem;
+
+    background-color: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+#typography h2 {
+    margin-bottom: 2rem;
+}
+
+.font-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    background-color: var(--background-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.font-card:last-child {
+    margin-bottom: 0;
+}
+
+.font-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.font-header h3 {
+    margin: 0;
+}
+
+.font-card p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.font-sample {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 48px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+
+    background-color: var(--background-color);
+
+    font-size: 1.75rem;
+    flex-shrink: 0;
+}
+
+.heading-sample {
+    font-family: var(--heading-font);
+}
+
+.body-sample {
+    font-family: var(--body-font);
+}
+
+
+/* ............ WIREFRAMES ........... */
+.wireframes {
+    max-width: var(--max-width);
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.wireframe-card {
+    margin-bottom: 3rem;
+}
+
+.wireframe-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--temple-blue);
+}
+
+.wireframe-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    border: 1px solid var(--platinum);
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-small);
+}
+
 /* ............ FOOTER ENHANCEMENTS ........... */
 .footer-project h3 {
     color: var(--white);
 }
 
-.footer-project p {
-    color: var(--white);
-}
-
-.footer-links ul,
-.footer-resources ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-}
 
 .footer-links a,
 .footer-resources a {
@@ -279,6 +484,8 @@ dialog p {
     flex-wrap: wrap;
     text-align: center;
     margin-bottom: 1.5rem;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 .footer-project img {
@@ -295,11 +502,13 @@ dialog p {
     width: 100%;
     margin-top: .5rem;
     font-size: .9rem;
+    color: var(--white);
 }
 
 .footer-copyright {
     margin-top: 1.5rem;
 }
+
 /* ............ TABLET ........... */
 @media screen and (min-width: 768px) {
     .scenario-grid {
@@ -316,5 +525,31 @@ dialog p {
 
     .hero img {
         height: 85vh;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .footer-project,
+    .footer-links,
+    .footer-resources {
+        margin: 0;
+        align-self: start;
+    }
+
+    .footer-copyright {
+        grid-column: 1 / -1;
+
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+        text-align: center;
     }
 }

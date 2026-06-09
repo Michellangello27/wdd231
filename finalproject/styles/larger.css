@@ -69,14 +69,25 @@
         max-width: 650px;
     }
 
-    /* ........... FOOTER LINKS ........... */
-    /*    .footer-links {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+    /* .......... FOOTER DESKTOP .......... */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+
+        align-items: start;
+        text-align: center;
     }
-*/
+
+    .footer-copyright {
+        grid-column: 1 / -1;
+
+        margin-top: 1rem;
+
+        text-align: center;
+    }
+
     /* .......... FOOTER SOCIAL ......... */
     .footer-social {
         gap: 1.5rem;
