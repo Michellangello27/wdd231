@@ -149,7 +149,8 @@
 
 
 .section-subtitle {
-    color: var(--inspiration-gold);
+    color: #f5f7fa;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, .9);
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
