@@ -1,0 +1,142 @@
+/* ........ TABLET & DESKTOP ............ */
+
+@media screen and (min-width: 641px) {
+
+    /* ......... HEADER CONTAINER ........... */
+    .header-container {
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ......... BRAND ......... */
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    /* ........ HAMBURGER BUTTON ....... */
+    .menu-button {
+        display: none;
+    }
+
+
+    /* ........ DESKTOP NAVIGATION ....... */
+    .navigation {
+        display: block !important;
+        border-top: none;
+        background: transparent;
+        margin-left: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        padding: .5rem 0;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .navigation a:hover {
+        background: transparent;
+        color: var(--secondary-color);
+    }
+
+    /* ......... MAIN .......... */
+    main {
+        padding-block: 2rem;
+    }
+
+    /* ---------- DESKTOP HERO TYPOGRAPHY ---------- */
+    .hero-content h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        max-width: 650px;
+    }
+
+    .hero-description {
+        font-size: 1.15rem;
+        max-width: 650px;
+    }
+
+    /* ........... FOOTER LINKS ........... */
+    /*    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+*/
+    /* .......... FOOTER SOCIAL ......... */
+    .footer-social {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+    .navigation a {
+        font-size: .75rem;
+    }
+
+}
+
+/* .......... LARGE DESKTOP ........... */
+@media screen and (min-width: 1024px) {
+
+    /* .......... HEADER .......... */
+    .header-container {
+        padding: 1rem 3rem;
+    }
+
+    /* ......... BRAND ............ */
+    .brand {
+        gap: 1rem;
+    }
+
+    .brand img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    /* ......... NAVIGATION ............ */
+    .navigation ul {
+        gap: 2rem;
+    }
+
+    /* ......... MAIN ............ */
+    main {
+        width: min(100% - 4rem, 1200px);
+    }
+
+
+    /* ......... FOOTER ............ */
+    footer {
+        padding: 3rem 2rem;
+    }
+
+}
+
+
+/* ......... EXTRA LARGE DESKTOP ............ */
+@media screen and (min-width: 1200px) {
+
+    /* .......... MAIN ............ */
+    main {
+        max-width: 1200px;
+    }
+}

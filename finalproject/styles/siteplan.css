@@ -1,0 +1,320 @@
+/* ............ SITE PLAN VARIABLES ........... */
+
+:root {
+
+    --temple-blue: #1E3A5F;
+    --inspiration-gold: #D4AF37;
+    --white: #FFFFFF;
+    --platinum: #F5F7FA;
+    --graphite: #2C2C2C;
+
+    --shadow-small:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+    --shadow-medium:
+        0 8px 24px rgba(0, 0, 0, 0.12);
+
+    --max-width: 1200px;
+
+}
+
+
+/* ............ HERO SECTION ........... */
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 75vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    display: block;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(rgba(30, 58, 95, 0.25),
+            rgba(30, 58, 95, 0.25));
+
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    color: var(--white);
+    font-family: "Merriweather", serif;
+    font-size: 1.30rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.hero-subtitle {
+    font-size: 0.90rem;
+    line-height: 1.4;
+    max-width: 240px;
+    margin-inline: auto;
+}
+
+.hero-description {
+    max-width: 240px;
+    font-size: .85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.hero-content .primary-btn {
+    background-color: var(--inspiration-gold);
+    color: var(--temple-blue);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+
+.hero-content .primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* ............ CONTENT SECTIONS ........... */
+.content-section {
+    max-width: var(--max-width);
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.content-section h2 {
+    color: var(--temple-blue);
+    font-family: "Merriweather", serif;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--inspiration-gold);
+    padding-bottom: .5rem;
+}
+
+.content-section h3 {
+    color: var(--temple-blue);
+    font-family: "Merriweather", serif;
+}
+
+
+.section-subtitle {
+    color: var(--inspiration-gold);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ............ IMPORTANT NOTICE ........... */
+.notice-section {
+    background-color: var(--platinum);
+    border-left: 8px solid var(--inspiration-gold);
+    border-radius: 12px;
+    box-shadow: var(--shadow-small);
+}
+
+
+/* ............ SCENARIO GRID ........... */
+
+.scenario-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+.scenario-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-small);
+    text-align: center;
+    transition: .3s ease;
+}
+
+.scenario-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-medium);
+}
+
+.scenario-card h3 {
+    margin-bottom: 1rem;
+}
+
+.scenario-card p {
+    margin-bottom: 1.5rem;
+}
+
+
+/* ............ SCENARIO BUTTONS ........... */
+.secondary-btn {
+    background-color: var(--temple-blue);
+    color: var(--white);
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: var(--inspiration-gold);
+    color: var(--temple-blue);
+}
+
+/* ............ DIALOGS ........... */
+dialog {
+    width: min(90%, 650px);
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow-medium);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    color: var(--temple-blue);
+    margin-bottom: 1rem;
+}
+
+dialog p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.close-modal {
+    background-color: var(--inspiration-gold);
+    color: var(--temple-blue);
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ............ FOOTER ENHANCEMENTS ........... */
+.footer-project h3 {
+    color: var(--white);
+}
+
+.footer-project p {
+    color: var(--white);
+}
+
+.footer-links ul,
+.footer-resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.footer-links a,
+.footer-resources a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover,
+.footer-resources a:hover {
+    color: var(--white);
+}
+
+/* ............ FOOTER SECTIONS ............ */
+.footer-links,
+.footer-resources {
+
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+.footer-links h3,
+.footer-resources h3 {
+    margin: 0 0 1rem 0;
+    color: var(--white);
+}
+
+.footer-links ul,
+.footer-resources ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ............ FOOTER PROJECT ........... */
+.footer-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-project img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-project h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.footer-project p {
+    width: 100%;
+    margin-top: .5rem;
+    font-size: .9rem;
+}
+
+.footer-copyright {
+    margin-top: 1.5rem;
+}
+/* ............ TABLET ........... */
+@media screen and (min-width: 768px) {
+    .scenario-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+/* ............ DESKTOP ........... */
+@media screen and (min-width: 1024px) {
+    .hero {
+        min-height: 85vh;
+    }
+
+    .hero img {
+        height: 85vh;
+    }
+}

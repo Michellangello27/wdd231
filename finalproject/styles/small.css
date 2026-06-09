@@ -1,0 +1,272 @@
+/* ......... ROOT VARIABLES ........... */
+
+:root {
+    /* ....... BRAND COLORS .......... */
+    --primary-color: #1E3A5F;
+    --secondary-color: #D4AF37;
+
+    /* ........ BACKGROUNDS ........... */
+    --background-color: #FFFFFF;
+    --surface-color: #F5F7FA;
+
+    /* ........ TEXT ........... */
+    --text-color: #2C2C2C;
+
+    /* ......... UI ELEMENTS .......... */
+    --border-color: #E5E7EB;
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, .08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, .12);
+
+    /* ......... TYPOGRAPHY ........... */
+    --heading-font: "Merriweather", serif;
+    --body-font: "Open Sans", sans-serif;
+
+    /* ........ LAYOUT .......... */
+    --max-width: 1200px;
+}
+
+
+/* ......... RESET ........... */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ......... TYPOGRAPHY .......... */
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+/* ......... HEADER .......... */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ........ HEADER CONTAINER ......... */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* ........ BRAND ...... */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: var(--primary-color);
+}
+
+.brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.brand-name {
+    color: var(--primary-color);
+    font-size: .95rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* ........ MOBILE MENU BUTTON ......... */
+.menu-button {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* ......... MOBILE NAVIGATION ....... */
+.navigation {
+    display: none;
+    background-color: white;
+    border-top: 1px solid var(--border-color);
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: background-color .3s ease;
+}
+
+.navigation a:hover {
+    background-color: var(--surface-color);
+}
+
+.navigation a.active,
+.navigation a[aria-current="page"] {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+
+/* ........ MAIN ......... */
+main {
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+    padding-block: 1rem;
+}
+
+
+/* .......... SECTIONS ........... */
+section {
+    margin-bottom: 3rem;
+}
+
+
+/* .......... BUTTONS ........... */
+.button-primary {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.button-secondary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ......... FOOTER .......... */
+footer {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+/* .......... UTILITY CLASSES .......... */
+.text-center {
+    text-align: center;
+}
+
+.surface {
+    background-color: var(--surface-color);
+}
+
+.shadow {
+    box-shadow: var(--shadow-sm);
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+
+/* ......... EXTRA SMALL DEVICES ......... */
+@media (max-width: 360px) {
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-name {
+        font-size: .85rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
