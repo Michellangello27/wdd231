@@ -439,7 +439,7 @@ dialog p {
 
 .footer-links a,
 .footer-resources a {
-    color: var(--secondary-color);
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
 }
