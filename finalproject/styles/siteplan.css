@@ -68,7 +68,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(30, 58, 95, 0.45);
+    background: rgba(30, 58, 95, 0.55);
     z-index: 0;
 }
 
