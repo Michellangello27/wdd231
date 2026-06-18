@@ -1,0 +1,137 @@
+[
+{
+"id": 1,
+"category": "Family History",
+"title": "FamilySearch",
+"url": "https://www.familysearch.org",
+"image": "images/resources/family-search.webp",
+"description": "Discover your ancestors, build your family tree, and prepare family names for temple ordinances.",
+"featured": true
+},
+{
+"id": 2,
+"category": "Official Church Resources",
+"title": "Gospel Library",
+"url": "https://www.churchofjesuschrist.org/study",
+"image": "images/resources/gospel-library.webp",
+"description": "Access scriptures, conference talks, manuals, videos, and official Church resources.",
+"featured": true
+},
+{
+"id": 3,
+"category": "Temple Resources",
+"title": "Temple Locator",
+"url": "https://www.churchofjesuschrist.org/temples",
+"image": "images/resources/temple-locator.webp",
+"description": "Find temple locations, schedules, announcements, and temple information throughout the world.",
+"featured": true
+},
+{
+"id": 4,
+"category": "Scriptures",
+"title": "Holy Bible",
+"url": "https://www.churchofjesuschrist.org/study/scriptures/bible",
+"image": "images/resources/sacred-scriptures.webp",
+"description": "The Old and New Testaments bearing witness of Jesus Christ, the Savior and Redeemer of the world.",
+"featured": true
+},
+{
+"id": 5,
+"category": "Scriptures",
+"title": "Book of Mormon",
+"url": "https://www.churchofjesuschrist.org/study/scriptures/bofm",
+"image": "images/resources/book-of-mormon.webp",
+"description": "Another Testament of Jesus Christ that strengthens faith in the Savior and His gospel.",
+"featured": true
+},
+{
+"id": 6,
+"category": "Scriptures",
+"title": "Doctrine and Covenants",
+"url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament",
+"image": "images/resources/sacred-scriptures.webp",
+"description": "Modern revelations teaching priesthood authority, temple covenants, and the gathering of Israel.",
+"featured": true
+},
+{
+"id": 7,
+"category": "Scriptures",
+"title": "Pearl of Great Price",
+"url": "https://www.churchofjesuschrist.org/study/scriptures/pgp",
+"image": "images/resources/sacred-scriptures.webp",
+"description": "Sacred writings containing the books of Moses and Abraham and teachings about God's plan of salvation.",
+"featured": false
+},
+{
+"id": 8,
+"category": "General Conference",
+"title": "General Conference",
+"url": "https://www.churchofjesuschrist.org/study/general-conference",
+"image": "images/resources/general-conference.webp",
+"description": "Messages from living prophets and apostles centered on Jesus Christ and His restored gospel.",
+"featured": true
+},
+{
+"id": 9,
+"category": "Learning",
+"title": "Come, Follow Me",
+"url": "https://www.churchofjesuschrist.org/study/come-follow-me",
+"image": "images/resources/come-follow-me.webp",
+"description": "Home-centered gospel learning resource for individuals and families.",
+"featured": false
+},
+{
+"id": 10,
+"category": "Priesthood Authority",
+"title": "The Oath and Covenant of the Priesthood",
+"url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/84",
+"image": "images/resources/oath-and-covenant.webp",
+"description": "Doctrine and Covenants 84 teaches the blessings, responsibilities, and promises associated with the Melchizedek Priesthood.",
+"featured": false
+},
+{
+"id": 11,
+"category": "Temple Resources",
+"title": "Endowed from on High",
+"url": "https://www.churchofjesuschrist.org/study/manual/endowed-from-on-high",
+"image": "images/resources/endowed-from-on-high.webp",
+"description": "Official temple preparation guide that helps members understand temple covenants and ordinances.",
+"featured": true
+},
+{
+"id": 12,
+"category": "Temple Resources",
+"title": "Temples of The Church of Jesus Christ of Latter-day Saints",
+"url": "https://www.churchofjesuschrist.org/temples",
+"image": "images/resources/temples.webp",
+"description": "Official information about temples, ordinances, dedications, announcements, and temple blessings.",
+"featured": false
+},
+{
+"id": 13,
+"category": "Eternal Families",
+"title": "The Family: A Proclamation to the World",
+"url": "https://www.churchofjesuschrist.org/study/manual/the-family-a-proclamation-to-the-world",
+"image": "images/resources/family-proclamation.webp",
+"description": "Prophetic declaration regarding the divine role of the family in God's plan of happiness.",
+"featured": true
+},
+{
+"id": 14,
+"category": "Eternal Families",
+"title": "Restoration of Sealing Keys",
+"url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/110",
+"image": "images/resources/sealing-keys.webp",
+"description": "Doctrine and Covenants 110 records Elijah's appearance in the Kirtland Temple and the restoration of the sealing power.",
+"featured": true
+},
+{
+"id": 15,
+"category": "Jesus Christ",
+"title": "The Living Christ",
+"url": "https://www.churchofjesuschrist.org/study/manual/the-living-christ-the-testimony-of-the-apostles",
+"image": "images/resources/the-living-christ.webp",
+"description": "A powerful testimony from modern apostles declaring Jesus Christ as the Living Son of God.",
+"featured": true
+}
+]

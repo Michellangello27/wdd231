@@ -1,0 +1,164 @@
+[
+{
+"id": 1,
+"category": "Jesus Christ",
+"reference": "John 3:16-17",
+"source": "Holy Bible",
+"title": "God's Love Through Jesus Christ",
+"verse": "For God so loved the world, that he gave his only begotten Son...",
+"featured": true
+},
+{
+"id": 2,
+"category": "Jesus Christ",
+"reference": "2 Nephi 25:26",
+"source": "Book of Mormon",
+"title": "We Talk of Christ",
+"verse": "We talk of Christ, we rejoice in Christ, we preach of Christ...",
+"featured": true
+},
+{
+"id": 3,
+"category": "Atonement",
+"reference": "Alma 7:11-13",
+"source": "Book of Mormon",
+"title": "The Infinite Atonement",
+"verse": "And he shall go forth, suffering pains and afflictions and temptations of every kind...",
+"featured": true
+},
+{
+"id": 4,
+"category": "Plan of Salvation",
+"reference": "Moses 1:39",
+"source": "Pearl of Great Price",
+"title": "God's Work and Glory",
+"verse": "For behold, this is my work and my glory—to bring to pass the immortality and eternal life of man.",
+"featured": true
+},
+{
+"id": 5,
+"category": "Conversion",
+"reference": "Ether 12:6",
+"source": "Book of Mormon",
+"title": "Faith Precedes Miracles",
+"verse": "Ye receive no witness until after the trial of your faith.",
+"featured": false
+},
+{
+"id": 6,
+"category": "Conversion",
+"reference": "Acts 3:19",
+"source": "Holy Bible",
+"title": "Repent and Be Converted",
+"verse": "Repent ye therefore, and be converted...",
+"featured": false
+},
+{
+"id": 7,
+"category": "Initial Covenants",
+"reference": "2 Nephi 31:10-12",
+"source": "Book of Mormon",
+"title": "Follow the Example of Christ",
+"verse": "Follow thou me, and do the things which ye have seen me do...",
+"featured": false
+},
+{
+"id": 8,
+"category": "Initial Covenants",
+"reference": "Moroni 2:2",
+"source": "Book of Mormon",
+"title": "Gift of the Holy Ghost",
+"verse": "Receive the Holy Ghost.",
+"featured": false
+},
+{
+"id": 9,
+"category": "Priesthood Authority",
+"reference": "Doctrine and Covenants 84:33-44",
+"source": "Doctrine and Covenants",
+"title": "The Oath and Covenant of the Priesthood",
+"verse": "For whoso is faithful unto the obtaining these two priesthoods...",
+"featured": true
+},
+{
+"id": 10,
+"category": "Temple Covenants",
+"reference": "Doctrine and Covenants 124:39",
+"source": "Doctrine and Covenants",
+"title": "Temple Ordinances",
+"verse": "For therein are the keys of the holy priesthood ordained...",
+"featured": true
+},
+{
+"id": 11,
+"category": "House of the Lord",
+"reference": "Doctrine and Covenants 88:119",
+"source": "Doctrine and Covenants",
+"title": "Establish a House of God",
+"verse": "Organize yourselves; prepare every needful thing; and establish a house of God.",
+"featured": true
+},
+{
+"id": 12,
+"category": "House of the Lord",
+"reference": "Psalm 24:3-4",
+"source": "Holy Bible",
+"title": "Who Shall Ascend Into the Hill of the Lord?",
+"verse": "He that hath clean hands, and a pure heart...",
+"featured": false
+},
+{
+"id": 13,
+"category": "House of the Lord",
+"reference": "Isaiah 2:2-3",
+"source": "Holy Bible",
+"title": "The Mountain of the Lord's House",
+"verse": "Come ye, and let us go up to the mountain of the Lord...",
+"featured": true
+},
+{
+"id": 14,
+"category": "Family History",
+"reference": "Malachi 4:5-6",
+"source": "Holy Bible",
+"title": "Turning the Hearts",
+"verse": "He shall turn the heart of the fathers to the children...",
+"featured": true
+},
+{
+"id": 15,
+"category": "Family History",
+"reference": "Doctrine and Covenants 110:13-16",
+"source": "Doctrine and Covenants",
+"title": "The Restoration of Sealing Keys",
+"verse": "Behold, the time has fully come...",
+"featured": true
+},
+{
+"id": 16,
+"category": "Family History",
+"reference": "Doctrine and Covenants 128:18",
+"source": "Doctrine and Covenants",
+"title": "A Welding Link",
+"verse": "For we without them cannot be made perfect...",
+"featured": true
+},
+{
+"id": 17,
+"category": "Eternal Families",
+"reference": "Doctrine and Covenants 132:19",
+"source": "Doctrine and Covenants",
+"title": "Families Forever",
+"verse": "Then shall they be gods, because they have no end...",
+"featured": true
+},
+{
+"id": 18,
+"category": "Jesus Christ",
+"reference": "3 Nephi 11:10-11",
+"source": "Book of Mormon",
+"title": "Behold, I Am Jesus Christ",
+"verse": "I am Jesus Christ, whom the prophets testified shall come into the world.",
+"featured": true
+}
+]

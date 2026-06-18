@@ -1,0 +1,132 @@
+[
+{
+"id": 1,
+"category": "Jesus Christ",
+"title": "The Atonement of Jesus Christ",
+"source": "Official Church YouTube Channel",
+"url": "https://www.youtube.com/watch?v=I6FKiNVbw3Y",
+"description": "President Henry B. Eyring and Elder Jeffrey R. Holland teach that the Atonement of Jesus Christ is the central act of God's plan of salvation and the motivating force behind sharing the gospel with others.",
+"featured": true,
+"priority": 1
+},
+{
+"id": 2,
+"category": "Jesus Christ",
+"title": "The Mediator",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "",
+"description": "Boyd K. Packer explains how Jesus Christ acts as our Mediator, satisfying both justice and mercy through His Atonement.",
+"featured": true,
+"priority": 2
+},
+{
+"id": 3,
+"category": "Jesus Christ",
+"title": "Because of Him",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "https://www.churchofjesuschrist.org/media/video/2014-04-1420-because-of-him",
+"description": "An inspiring Easter message centered on Jesus Christ, His Resurrection, and His redeeming power.",
+"featured": true,
+"priority": 3
+},
+{
+"id": 4,
+"category": "Jesus Christ",
+"title": "The Living Christ",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "",
+"description": "A testimony of Jesus Christ as the Living Son of God, Redeemer, Savior, and King.",
+"featured": true,
+"priority": 4
+},
+{
+"id": 5,
+"category": "Temple Covenants",
+"title": "Welcome to the House of the Lord",
+"source": "Official Church YouTube Channel",
+"url": "https://www.youtube.com/watch?v=ipRn6YAasEs",
+"description": "An introduction to temples and their sacred purpose as the House of the Lord.",
+"featured": true,
+"priority": 5
+},
+{
+"id": 6,
+"category": "Temple Covenants",
+"title": "What Happens in a Temple?",
+"source": "Official Church YouTube Channel",
+"url": "https://www.youtube.com/watch?v=4FEO4vGChmQ",
+"description": "Explains temple ordinances, covenants, and worship in a respectful and accessible way.",
+"featured": true,
+"priority": 6
+},
+{
+"id": 7,
+"category": "Temple Covenants",
+"title": "Focus on the Temple",
+"source": "General Conference",
+"url": "https://www.churchofjesuschrist.org/media/video/2022-10-5080-russell-m-nelson",
+"description": "President Russell M. Nelson teaches about temple blessings and covenant discipleship.",
+"featured": true,
+"priority": 7
+},
+{
+"id": 8,
+"category": "Temple Covenants",
+"title": "The Temple and Your Spiritual Foundation",
+"source": "Official Church YouTube Channel",
+"url": "https://www.youtube.com/watch?v=_ZiNnsmxr4Y",
+"description": "President Nelson explains how temple covenants strengthen spiritual foundations.",
+"featured": false,
+"priority": 8
+},
+{
+"id": 9,
+"category": "Family History",
+"title": "Turning Hearts",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "https://www.churchofjesuschrist.org/media/video/2011-08-0008-turning-hearts",
+"description": "A message about Elijah's mission and the importance of family history work.",
+"featured": true,
+"priority": 9
+},
+{
+"id": 10,
+"category": "Family History",
+"title": "Discover Your Family History, Discover Your Story",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "https://www.churchofjesuschrist.org/media/video/2014-02-0001-discover-your-family-history-discover-your-story",
+"description": "Learn how FamilySearch and family history research help connect generations.",
+"featured": false,
+"priority": 10
+},
+{
+"id": 11,
+"category": "Eternal Families",
+"title": "The Blessings of the Temple",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "https://www.churchofjesuschrist.org/media/video/2009-03-0010-the-blessings-of-the-temple",
+"description": "Temple ordinances and covenants bless individuals and families eternally.",
+"featured": true,
+"priority": 11
+},
+{
+"id": 12,
+"category": "Eternal Families",
+"title": "Families Can Be Together Forever",
+"source": "The Church of Jesus Christ of Latter-day Saints",
+"url": "",
+"description": "A message explaining the doctrine of eternal families through temple covenants.",
+"featured": true,
+"priority": 12
+},
+{
+"id": 13,
+"category": "The Restoration",
+"title": "The First Vision",
+"source": "Official Church YouTube Channel",
+"url": "https://www.youtube.com/watch?v=R5FxdCgD-qI",
+"description": "Joseph Smith's First Vision and the beginning of the Restoration of the Gospel of Jesus Christ.",
+"featured": true,
+"priority": 13
+}
+]

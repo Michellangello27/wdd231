@@ -1,0 +1,237 @@
+body {
+    background: var(--surface-color);
+}
+
+.contact-hero {
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    background:
+        linear-gradient(90deg, rgba(30, 58, 95, .94), rgba(30, 58, 95, .72), rgba(30, 58, 95, .28)),
+        url("../images/hero-limatemple.webp") center / cover;
+    box-shadow: var(--shadow-md);
+}
+
+.contact-hero-content {
+    width: min(100%, 740px);
+    padding: 2rem;
+    color: white;
+}
+
+.eyebrow {
+    margin-bottom: .65rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.contact-hero h1 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: clamp(2.25rem, 7vw, 4rem);
+    line-height: 1.08;
+}
+
+.contact-hero p:not(.eyebrow) {
+    max-width: 610px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, .95);
+    font-size: 1.05rem;
+}
+
+.contact-layout {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.form-card,
+.info-content {
+    padding: 1.5rem;
+}
+
+.card-heading {
+    margin-bottom: 1.5rem;
+}
+
+.card-heading h2,
+.info-content h2 {
+    margin-bottom: .65rem;
+}
+
+.card-heading p:last-child,
+.info-content>p:not(.eyebrow) {
+    color: #555f6d;
+}
+
+.form-row {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-field {
+    margin-bottom: 1.1rem;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: .4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: .8rem .9rem;
+    border: 1px solid #9ca3af;
+    border-radius: 8px;
+    background: white;
+    color: var(--text-color);
+    font: inherit;
+}
+
+.form-field textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.form-field input:hover,
+.form-field textarea:hover {
+    border-color: var(--primary-color);
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible,
+.submit-button:focus-visible,
+.navigation a:focus-visible,
+footer a:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+.form-field input:user-invalid,
+.form-field textarea:user-invalid {
+    border-color: #9f1d20;
+}
+
+.field-hint {
+    display: block;
+    margin-top: .35rem;
+    color: #596273;
+    font-size: .86rem;
+}
+
+.submit-button {
+    min-height: 48px;
+    width: 100%;
+    padding: .8rem 1.4rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: white;
+    font: 700 1rem var(--body-font);
+    cursor: pointer;
+    transition: background-color .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;
+}
+
+.submit-button:hover {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.form-status {
+    min-height: 1.5rem;
+    margin: .75rem 0 0;
+    color: #9f1d20;
+    font-weight: 700;
+}
+
+.info-card>img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.topic-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.topic-list li {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: .85rem;
+    align-items: start;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.topic-icon {
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(184, 147, 34, .16);
+    color: var(--primary-color);
+}
+
+.topic-list h3 {
+    margin-bottom: .3rem;
+    font-size: 1.05rem;
+}
+
+.topic-list p {
+    margin-bottom: 0;
+    color: #4f5865;
+    font-size: .94rem;
+}
+
+@media screen and (min-width: 640px) {
+    .form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .submit-button {
+        width: auto;
+        min-width: 190px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-hero {
+        min-height: 400px;
+    }
+
+    .contact-hero-content,
+    .form-card,
+    .info-content {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .contact-layout {
+        grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr);
+        gap: 2rem;
+        align-items: start;
+    }
+}

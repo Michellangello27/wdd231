@@ -1,0 +1,593 @@
+/* .................................
+   HOME PAGE
+   Walking with Purpose
+   ................................. */
+
+/* ........ HERO SECTION ........ */
+.hero {
+    position: relative;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.hero img {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 700px;
+
+    padding: 2rem;
+
+    color: white;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, .70) 0%,
+            rgba(0, 0, 0, .45) 35%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-tagline {
+    font-size: clamp(1rem, 1.6vw, 1.8rem);
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero-text {
+    max-width: 480px;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ........ HERO CTA ........ */
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ........ BUTTONS ........ */
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: .9rem 1.8rem;
+    background: transparent;
+    color: var(--background-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: .75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    background: var(--secondary-color);
+    color: var(--background-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, .30);
+}
+
+/* ........ HOME SECTIONS ........ */
+.home-section {
+    margin-bottom: 3rem;
+}
+
+.home-section h2 {
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.section-card {
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* ..... COVENANT PATH ....... */
+
+.covenant-path-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem;
+}
+
+.path-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.path-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.path-item p {
+    margin-top: .5rem;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.path-arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+/* ........ SHARED SECTION CARD ........ */
+
+.section-card {
+    background: white;
+    border-radius: 12px;
+    border-left: 4px solid var(--secondary-color);
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, .08);
+}
+
+/* ........ FEATURED SCRIPTURE ........ */
+
+.scripture-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 6px solid var(--secondary-color);
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, .08);
+}
+
+.scripture-card h3 {
+
+    margin-bottom: 1rem;
+}
+
+.scripture-reference {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.scripture-book {
+    color: #666;
+}
+
+/* ........ FEATURED TEMPLE ........ */
+
+.featured-temple-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, .10);
+    border-left: 6px solid var(--secondary-color);
+    min-height: 300px;
+}
+
+.featured-temple-card img:first-child {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-temple-content {
+    padding: 1.5rem;
+}
+
+.featured-temple-content h3 {
+    margin-bottom: .75rem;
+}
+
+.temple-location {
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+}
+
+.temple-weather {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.temple-weather img {
+    width: 48px;
+    height: 48px;
+}
+
+.temple-description {
+    line-height: 1.7;
+}
+
+/* ........ FEATURED RESOURCE ........ */
+.featured-resource-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, .08);
+
+    border-left: 6px solid var(--secondary-color);
+}
+
+.featured-resource-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-resource-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.featured-resource-card h3,
+.featured-resource-card h4,
+.featured-resource-card p,
+.featured-resource-card a {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.featured-resource-card h3,
+.featured-resource-card h4 {
+    margin-top: 1rem;
+}
+
+.featured-resource-card p,
+.featured-resource-card a {
+    margin-bottom: 1rem;
+}
+
+.featured-resource-content {
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.button-primary {
+    margin-top: auto;
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: .75rem 1.5rem;
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: .75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.button-primary:hover {
+    background: var(--secondary-color);
+    color: white;
+    border: 2px solid var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, .30);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.resource-card h3,
+.resource-card h4,
+.resource-card p,
+.resource-card a {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.resource-card h3,
+.resource-card h4 {
+    margin-top: 1rem;
+}
+
+.resource-card p,
+.resource-card a {
+    margin-bottom: 1rem;
+}
+
+/* ........ WEATHER ICON ........ */
+
+.weather-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px;
+    min-height: 48px;
+    flex-shrink: 0;
+}
+
+/* ........ FEATURED CONTENT ........ */
+
+.featured-content {
+    display: grid;
+    gap: 2rem;
+}
+
+/* ........ TABLET ........ */
+
+@media screen and (min-width: 768px) {
+
+    .hero-cta {
+        flex-direction: row;
+    }
+
+    .featured-temple-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .featured-temple-card>img {
+        width: 100%;
+        height: 100%;
+        min-height: 320px;
+        object-fit: cover;
+    }
+
+    .featured-temple-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .featured-resource-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .featured-resource-card img {
+        width: 100%;
+        height: 100%;
+        min-height: 320px;
+        object-fit: cover;
+    }
+
+    .temple-weather {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .weather-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        flex-shrink: 0;
+    }
+}
+
+/* ........ TABLET + DESKTOP  ........ */
+
+@media screen and (min-width: 640px) {
+    .covenant-path-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: .5rem;
+    }
+
+    .path-item {
+        width: 70px;
+    }
+
+    .path-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .path-item p {
+        font-size: .65rem;
+        line-height: 1.2;
+    }
+
+    .path-arrow {
+        font-size: .9rem;
+    }
+}
+
+.featured-temple-card img[alt*="Overcast"],
+.featured-temple-card img[alt*="Cloud"],
+.featured-temple-card img[alt*="weather"] {
+    width: 48px;
+    height: 48px;
+}
+
+/* ....... WHY TEMPLES MATTER ........... */
+.why-temples-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.why-card {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.why-card img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.why-card h3 {
+    margin-bottom: .5rem;
+}
+
+.why-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+
+    .why-temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-card {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .why-card img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* .......TEMPLE + FAMILY HISTORY  .... */
+
+.relationship-banner {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, .08);
+}
+
+.relationship-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .75rem;
+    max-width: 260px;
+}
+
+.relationship-item img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.relationship-item p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.relationship-line {
+    width: 2px;
+    height: 40px;
+    background:
+        repeating-linear-gradient(to bottom,
+            var(--secondary-color) 0,
+            var(--secondary-color) 4px,
+            transparent 4px,
+            transparent 8px);
+}
+
+@media screen and (min-width: 768px) {
+
+    .relationship-banner {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .relationship-line {
+        width: 100px;
+        height: 2px;
+        background:
+            repeating-linear-gradient(to right,
+                var(--secondary-color) 0,
+                var(--secondary-color) 4px,
+                transparent 4px,
+                transparent 8px);
+    }
+
+    .featured-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        align-items: stretch;
+    }
+
+    #featured-temple,
+    #featured-resource {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-temple-card,
+    .featured-resource-card {
+        flex: 1;
+    }
+
+    #featured-temple h2,
+    #featured-resource h2 {
+        margin-bottom: 1rem;
+    }
+
+    .relationship-item {
+        flex-direction: row;
+        text-align: left;
+        max-width: 320px;
+    }
+
+    .relationship-item img {
+        width: 80px;
+        height: 80px;
+    }
+}

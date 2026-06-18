@@ -1,0 +1,158 @@
+/* ........ TABLET & DESKTOP ............ */
+
+@media screen and (min-width: 960px) {
+
+    /* ......... HEADER CONTAINER ........... */
+    .header-container {
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ......... BRAND ......... */
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    /* ........ HAMBURGER BUTTON ....... */
+    .menu-button {
+        display: none;
+    }
+
+    /* ........ DESKTOP NAVIGATION ....... */
+    .navigation {
+        display: block !important;
+        border-top: none;
+        background: transparent;
+        margin-left: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        padding: .5rem 0;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .navigation a:hover {
+        background: transparent;
+        color: var(--secondary-color);
+    }
+
+    /* ......... MAIN .......... */
+    main {
+        padding-block: 2rem;
+    }
+
+    /* ---------- DESKTOP HERO TYPOGRAPHY ---------- */
+    .hero-content h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        max-width: 650px;
+    }
+
+    .hero-description {
+        font-size: 1.15rem;
+        max-width: 650px;
+    }
+
+    /* .......... FOOTER DESKTOP .......... */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    /* .......... FOOTER SOCIAL ......... */
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    /* ---------- COVENANT PATH TABLET ---------- */
+    .covenant-path-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: .5rem;
+    }
+    .path-item {
+        width: 70px;
+    }
+    .path-item img {
+        width: 40px;
+        height: 40px;
+    }
+    .path-item p {
+        font-size: .65rem;
+        line-height: 1.2;
+    }
+    .path-arrow {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+    .navigation a {
+        font-size: .75rem;
+    }
+}
+
+/* .......... LARGE DESKTOP ........... */
+.covenant-path-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.path-item {
+    width: 110px;
+}
+
+.path-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.path-arrow {
+    font-size: 2rem;
+}
+
+/* ......... EXTRA LARGE DESKTOP ............ */
+@media screen and (min-width: 1200px) {
+
+    /* .......... MAIN ............ */
+    main {
+        max-width: 1200px;
+    }
+}

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META CONFIGURATION -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View your saved favorite temples from the Walking with Purpose temple explorer.">
+    <meta name="author" content="Miguel Angel Cornejo Durand">
+
+    <!-- TITLE -->
+    <title>Walking with Purpose | Favorite Temples</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/favorites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/favorites.js" defer></script>
+</head>
+
+<body>
+   <header>
+    <div class="header-container">
+
+        <!-- ............ BRAND LOGO .......... -->
+        <a href="index.html" class="brand" aria-label="Go to Walking with Purpose homepage">
+            <img src="images/logo.webp"
+                alt="Walking with Purpose logo"
+                width="70"
+                height="70"
+                fetchpriority="high">
+
+            <span class="brand-name">
+                Walking with Purpose
+            </span>
+        </a>
+
+        <!-- ....... MOBILE MENU BUTTON ........ -->
+        <button id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <!-- ........ PRIMARY NAVIGATION ......... -->
+        <nav id="primary-navigation"
+            class="navigation"
+            aria-label="Primary navigation">
+
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="temples.html">
+                        Temples
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        Covenant Path
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        Family History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="favorites.html" aria-current="page">
+                        Favorites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+</header>
+
+    <main>
+        <!-- .......... FAVORITES HERO SECTION .......... -->
+        <section class="favorites-hero" aria-labelledby="favorites-title">
+            <div class="favorites-hero-content">
+                <p class="eyebrow">Walking with Purpose</p>
+                <h1 id="favorites-title">Favorite Temples</h1>
+                <p>Review the temples you saved and keep meaningful places close as you continue learning about temple blessings.</p>
+            </div>
+        </section>
+
+        <!-- ........ FAVORITES STATISTICS SECTION ........ -->
+        <section class="favorites-stats" aria-label="Favorite temple statistics">
+            <article class="stat-card">
+                <span id="total-saved">0</span>
+                <p>Total Saved</p>
+            </article>
+            <article class="stat-card">
+                <span id="operating-count">0</span>
+                <p>Operating</p>
+            </article>
+            <article class="stat-card">
+                <span id="announced-count">0</span>
+                <p>Announced</p>
+            </article>
+        </section>
+
+        <!-- .......... FAVORITES FILTER SECTION .......... -->
+        <section class="favorites-filters" aria-label="Filter favorite temples by status">
+            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="operating" aria-pressed="false">Operating</button>
+            <button class="filter-btn" type="button" data-filter="announced" aria-pressed="false">Announced</button>
+        </section>
+
+        <!-- .......... FAVORITES GRID SECTION .......... -->
+        <section class="favorites-section" aria-live="polite">
+            <div id="favorites-grid" class="favorites-grid"></div>
+            <div id="empty-state" class="empty-state" hidden>
+                <h2><span aria-hidden="true">❤️</span> No Favorite Temples Yet</h2>
+                <p>Visit the Temples page and save your first temple.</p>
+                <a href="temples.html" class="explore-btn">Explore Temples</a>
+            </div>
+        </section>
+
+        <dialog id="favorite-dialog" class="favorite-dialog" aria-labelledby="dialog-title">
+            <button id="close-dialog" class="dialog-close" type="button" aria-label="Close temple details">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <div id="dialog-content"></div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <img src="images/logo.webp" alt="Walking with Purpose logo" width="80" height="80">
+            <h3>Walking with Purpose</h3>
+            <p>Jesus Christ teaches us <br>the way through the veil</p>
+            <p>Temples • Family History <br>• Eternal Families</p>
+        </div>
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="covenants-path.html">Covenant Path</a></li>
+                <li><a href="family-history.html">Family History</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:contact@walkingwithpurpose.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>WDD231 Final Project</p>
+            <p>© <span id="currentyear"></span> Miguel Angel Cornejo Durand</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

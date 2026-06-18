@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META CONFIGURATION -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Walking with Purpose is an interactive website that explores Jesus Christ, the covenant path, temple ordinances, family history, and eternal families through temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Miguel Ángel Cornejo Durand">
+    <meta name="keywords"
+        content="Jesus Christ, Covenant Path, Temples, Family History, FamilySearch, Eternal Families, Temple Ordinances, Church of Jesus Christ of Latter-day Saints, WDD231">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Walking with Purpose">
+    <meta property="og:description"
+        content="Jesus Christ teaches us the way through the veil. Explore temples, family history, sacred ordinances, and eternal families.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-arequipa-temple.webp">
+    <meta property="og:url" content="https://michellangello27.github.io/wdd231/final/">
+
+    <!-- TITLE -->
+    <title>
+        Walking with Purpose | Temples, Family History & Eternal Families
+    </title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather-icons.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/temple-image.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header-container">
+            <!-- ............ BRAND LOGO .......... -->
+            <a href="index.html" class="brand" aria-label="Go to Walking with Purpose homepage">
+                <img src="images/logo.webp" alt="Walking with Purpose logo" width="70" height="70" fetchpriority="high">
+                <span class="brand-name">
+                    Walking with Purpose
+                </span>
+            </a>
+
+            <!-- ....... MOBILE MENU BUTTON ........ -->
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <!-- ........ PRIMARY NAVIGATION ......... -->
+            <nav id="primary-navigation" class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="temples.html">
+                            Temples
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            Covenant Path
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">
+                            Family History
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="resources.html">
+                            Resources
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="favorites.html">
+                            Favorites
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+
+        <!-- .......... HERO SECTION .......... -->
+        <section class="hero">
+            <img src="images/hero-arequipatemple.webp" alt="Arequipa Peru Temple">
+            <div class="hero-content">
+
+                <h1>Walking with Purpose</h1>
+
+                <p class="hero-tagline">
+                    Jesus Christ teaches us<br>
+                    the way through the veil
+                </p>
+
+                <p class="hero-text">
+                    Helping members and families discover the blessings of the temple
+                    and preserve their family history for generations to come.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="temples.html" class="primary-btn">
+                        Explore Temples
+                    </a>
+
+                    <a href="family-history.html" class="secondary-btn">
+                        Start Family History
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- .......... COVENANT PATH .......... -->
+        <section id="covenant-path" class="home-section">
+            <h2>
+                The Covenant Path
+            </h2>
+            <div class="covenant-path-container section-card">
+                <div class="path-item">
+                    <img src="images/faith.webp" alt="Faith" loading="lazy">
+                    <p>Faith</p>
+                </div>
+                <div class="path-arrow">→</div>
+                <div class="path-item">
+                    <img src="images/baptism.webp" alt="Baptism" loading="lazy">
+                    <p>Baptism</p>
+                </div>
+                <div class="path-arrow">→</div>
+                <div class="path-item">
+                    <img src="images/confirmation.webp" alt="Confirmation" loading="lazy">
+                    <p>Confirmation</p>
+                </div>
+                <div class="path-arrow">→</div>
+                <div class="path-item">
+                    <img src="images/preparation.webp" alt="Temple Preparation" loading="lazy">
+                    <p>Temple Preparation</p>
+                </div>
+                <div class="path-arrow">→</div>
+                <div class="path-item">
+                    <img src="images/ordinances.webp" alt="Temple Ordinances" loading="lazy">
+                    <p>Temple Ordinances</p>
+                </div>
+                <div class="path-arrow">→</div>
+                <div class="path-item">
+                    <img src="images/family-history.webp" alt="Family History and Temple Service" loading="lazy">
+                    <p>
+                        Family History &
+                        Temple Service
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- .......... WHY TEMPLES MATTER .......... -->
+        <section class="home-section why-temples">
+            <h2>Why Temples Matter</h2>
+            <div class="why-temples-grid">
+                <article class="why-card section-card">
+                    <img src="images/temple-gold.webp" alt="Temple Worship">
+                    <div>
+                        <h3>Sacred Worship</h3>
+                        <p>
+                            Temples are houses of the Lord where members worship,
+                            make sacred covenants, and draw closer to Jesus Christ.
+                        </p>
+                    </div>
+                </article>
+                <article class="why-card section-card">
+                    <img src="images/families-gold.webp" alt="Eternal Families">
+                    <div>
+                        <h3>Eternal Families</h3>
+                        <p>
+                            Through temple ordinances, families can be united
+                            beyond mortality and remain together eternally.
+                        </p>
+                    </div>
+                </article>
+                <article class="why-card section-card">
+                    <img src="images/scripture-gold.webp" alt="Sacred Ordinances">
+                    <div>
+                        <h3>Sacred Ordinances</h3>
+                        <p>
+                            Temple ordinances help individuals make and keep
+                            covenants that strengthen faith and discipleship.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- .......... TEMPLE + FAMILY HISTORY .......... -->
+        <section id="temple-family-history" class="home-section">
+            <h2>
+                How Temples and Family History Work Together
+            </h2>
+            <div class="relationship-banner section-card">
+                <article class="relationship-item">
+                    <img src="images/temple-blue.webp" alt="Temple Ordinances">
+                    <p>
+                        Temples provide sacred ordinances.
+                    </p>
+                </article>
+                <div class="relationship-line"></div>
+                <article class="relationship-item">
+                    <img src="images/family-blue.webp" alt="Family History">
+                    <p>
+                        Family history helps us find our ancestors.
+                    </p>
+                </article>
+                <div class="relationship-line"></div>
+                <article class="relationship-item">
+                    <img src="images/together-blue.webp" alt="Together">
+                    <p>
+                        Together, they bless the living and the dead.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- .......... FEATURED SCRIPTURE 
+        <section id="featured-scripture" class="home-section">
+            <h2>
+                Featured Scripture
+            </h2>
+            <div id="featured-scripture-container">
+            </div>
+        </section>
+        .......... -->
+        <!-- FEATURED CONTENT -->
+        <section class="featured-content">
+
+            <!-- ....... FEATURED TEMPLE ....... -->
+            <section id="featured-temple" class="home-section">
+                <h2>
+                    Featured Temple
+                </h2>
+                <div id="featured-temple-container">
+                </div>
+            </section>
+
+            <!--....... FEATURED RESOURCE .............-->
+            <section id="featured-resource" class="home-section">
+                <h2>
+                    Featured Family History Resource
+                </h2>
+                <div id="featured-resource-container">
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <img src="images/logo.webp" alt="Walking with Purpose logo" width="80" height="80">
+
+            <h3>Walking with Purpose</h3>
+
+            <p>
+                Jesus Christ teaches us <br>
+                the way through the veil
+            </p>
+
+            <p>
+                Temples • Family History <br>
+                • Eternal Families
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Navigation</h3>
+
+            <ul>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="covenants-path.html">Covenant Path</a></li>
+                <li><a href="family-history.html">Family History</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:contact@walkingwithpurpose.org" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+
+            <p>WDD231 Final Project</p>
+
+            <p>
+                © <span id="currentyear"></span>
+                Miguel Angel Cornejo Durand
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+﻿/* .......... FAVORITES HERO SECTION .......... */
+.favorites-hero {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    background:
+        linear-gradient(90deg, rgba(30, 58, 95, .94), rgba(30, 58, 95, .72), rgba(30, 58, 95, .28)),
+        url("../images/hero-limatemple.webp") center / cover;
+    box-shadow: var(--shadow-md);
+}
+
+.favorites-hero-content {
+    width: min(100%, 760px);
+    padding: 2rem;
+    color: white;
+}
+
+.eyebrow {
+    margin-bottom: .75rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.favorites-hero h1 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: clamp(2.2rem, 7vw, 4rem);
+    line-height: 1.08;
+}
+
+.favorites-hero p:not(.eyebrow) {
+    max-width: 620px;
+    color: rgba(255, 255, 255, .94);
+    font-size: 1.05rem;
+}
+
+/* ........ FAVORITES STATISTICS SECTION ........ */
+.favorites-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    min-height: 110px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.stat-card span {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-card p {
+    margin: .35rem 0 0;
+    font-weight: 700;
+}
+
+/* .......... FAVORITES FILTER SECTION .......... */
+.favorites-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    min-width: 128px;
+    min-height: 46px;
+    padding: .7rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 999px;
+    background: white;
+    color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .25s ease, color .25s ease, transform .25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-btn:focus-visible,
+.details-btn:focus-visible,
+.remove-btn:focus-visible,
+.explore-btn:focus-visible,
+.dialog-close:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+/* .......... FAVORITES GRID SECTION .......... */
+.favorites-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.favorite-card {
+    overflow: hidden;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.favorite-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.favorite-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.favorite-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.favorite-content {
+    padding: 1.25rem;
+}
+
+.favorite-content h3 {
+    margin-bottom: .5rem;
+    line-height: 1.3;
+}
+
+.favorite-location,
+.favorite-dedication {
+    margin-bottom: .75rem;
+    color: #555;
+}
+
+.favorite-status,
+.dialog-status {
+    width: fit-content;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: .35rem .75rem;
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.status-operating {
+    background: rgba(30, 95, 64, .12);
+    color: #1e5f40;
+}
+
+.status-announced {
+    background: rgba(30, 58, 95, .12);
+    color: var(--primary-color);
+}
+
+.favorite-actions {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 1rem;
+}
+
+.details-btn,
+.remove-btn,
+.explore-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    padding: .7rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.details-btn {
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+}
+
+.remove-btn {
+    border: 2px solid var(--secondary-color);
+    background: white;
+    color: var(--primary-color);
+}
+
+.remove-btn:hover,
+.explore-btn:hover {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.empty-state {
+    max-width: 680px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.empty-state h2 {
+    margin-bottom: .75rem;
+}
+
+.explore-btn {
+    margin-top: 1rem;
+    border: 2px solid var(--secondary-color);
+    background: var(--primary-color);
+    color: white;
+}
+
+.favorite-dialog {
+    width: min(94vw, 760px);
+    max-height: 90vh;
+    padding: 0;
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .32);
+}
+
+.favorite-dialog::backdrop {
+    background: rgba(0, 0, 0, .65);
+}
+
+.dialog-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.dialog-image {
+    height: 260px;
+    overflow: hidden;
+}
+
+.dialog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dialog-body {
+    padding: 1.5rem;
+}
+
+.dialog-body h2 {
+    margin-bottom: .5rem;
+}
+
+.dialog-description {
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+    .favorites-hero {
+        min-height: 430px;
+    }
+
+    .favorites-hero-content {
+        padding: 3rem;
+    }
+
+    .favorites-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .favorites-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorite-actions {
+        flex-direction: row;
+    }
+
+    .details-btn,
+    .remove-btn {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .favorites-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .favorites-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

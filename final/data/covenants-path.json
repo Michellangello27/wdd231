@@ -1,0 +1,98 @@
+[
+{
+"id": 1,
+"category": "Conversion",
+"title": "Faith in Jesus Christ",
+"references": [
+"Hebrews 11:1",
+"Alma 32:21",
+"Ether 12:6",
+"Articles of Faith 1:4"
+],
+"description": "Faith in Jesus Christ is the first principle of the gospel and the foundation of the covenant path."
+},
+{
+"id": 2,
+"category": "Conversion",
+"title": "Repentance",
+"references": [
+"Acts 3:19",
+"Alma 36:18",
+"Doctrine and Covenants 58:42-43",
+"Moses 6:52"
+],
+"description": "Repentance allows us to change, receive forgiveness, and draw closer to Heavenly Father and Jesus Christ."
+},
+{
+"id": 3,
+"category": "Initial Covenants",
+"title": "Baptism",
+"references": [
+"John 3:5",
+"2 Nephi 31:5-12",
+"Doctrine and Covenants 20:37",
+"Moses 6:64-66"
+],
+"description": "Baptism by immersion is the first saving ordinance and marks the beginning of a covenant relationship with God."
+},
+{
+"id": 4,
+"category": "Initial Covenants",
+"title": "Confirmation",
+"references": [
+"Acts 8:17",
+"Moroni 2:2",
+"Doctrine and Covenants 33:15",
+"Articles of Faith 1:4"
+],
+"description": "Confirmation grants the gift of the Holy Ghost and full membership in the Church."
+},
+{
+"id": 5,
+"category": "Priesthood Authority",
+"title": "Aaronic Priesthood",
+"references": [
+"Hebrews 5:4",
+"Alma 13:6",
+"Doctrine and Covenants 13:1",
+"Joseph Smith—History 1:68-72"
+],
+"description": "The Aaronic Priesthood administers the ordinances of baptism and the sacrament and prepares young men for future service."
+},
+{
+"id": 6,
+"category": "Priesthood Authority",
+"title": "Melchizedek Priesthood",
+"references": [
+"Hebrews 7:17",
+"Alma 13:18-19",
+"Doctrine and Covenants 84:19-22",
+"Articles of Faith 1:5"
+],
+"description": "The Melchizedek Priesthood holds the authority to administer spiritual ordinances and lead the Church."
+},
+{
+"id": 7,
+"category": "Temple Covenants",
+"title": "Temple Ordinances",
+"references": [
+"Psalm 24:3-4",
+"Mosiah 5:5",
+"Doctrine and Covenants 124:39",
+"Moses 1:39"
+],
+"description": "Temple ordinances and covenants help individuals draw closer to Jesus Christ and prepare for eternal life."
+},
+{
+"id": 8,
+"category": "Eternal Families",
+"title": "Family History",
+"references": [
+"Malachi 4:5-6",
+"1 Nephi 5:14-16",
+"Doctrine and Covenants 128:18",
+"Abraham 1:31"
+],
+"description": "Family history research connects generations and makes temple ordinances available for ancestors, helping unite families eternally."
+}
+]

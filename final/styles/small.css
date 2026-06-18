@@ -1,0 +1,433 @@
+/* ......... ROOT VARIABLES ........... */
+
+:root {
+    /* .......... BRAND COLORS ........*/
+    /* Temple Blue
+       Header and navigation
+       Main headings and section titles
+       Footer background
+       Primary interface elements
+    */
+    --primary-color: #1E3A5F;
+
+    /* Inspiration Gold
+       Call-to-action buttons
+       Icons and highlights
+       Important visual accents
+       Featured content emphasis
+    */
+    --secondary-color: #B89322;
+
+    /* ........ BACKGROUNDS ...... */
+    /* White
+       Main page background
+       Content areas
+       Readability sections
+    */
+    --background-color: #FFFFFF;
+
+    /* Light Gray
+       Cards and panels
+       Alternate section backgrounds
+       Informational containers
+    */
+    --surface-color: #F5F7FA;
+
+    /* ........ TEXT ....... */
+
+    /* Graphite
+       Body text
+       General content
+       Interface readability
+    */
+    --text-color: #2C2C2C;
+
+    /* ........ TYPOGRAPHY ...... */
+
+    /* Merriweather
+       Hero titles
+       Section headings
+       Important page titles
+    */
+    --heading-font: "Merriweather", serif;
+
+    /* Open Sans
+       Navigation menu
+       Body text
+       Buttons
+       Descriptions and UI elements
+    */
+    --body-font: "Open Sans", sans-serif;
+
+    /* ....... UI ELEMENTS .......... */
+
+    --border-color: #E5E7EB;
+
+    --shadow-sm:
+        0 2px 6px rgba(0, 0, 0, .08);
+
+    --shadow-md:
+        0 4px 12px rgba(0, 0, 0, .12);
+
+    /* ........ LAYOUT ....... */
+
+    --max-width: 1200px;
+
+}
+
+/* ......... RESET ........... */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ......... TYPOGRAPHY .......... */
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+/* ......... HEADER .......... */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ........ HEADER CONTAINER ......... */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* ........ BRAND ...... */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: var(--primary-color);
+}
+
+.brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.brand-name {
+    color: var(--primary-color);
+    font-size: .95rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* ........ MOBILE MENU BUTTON ......... */
+.menu-button {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* ......... MOBILE NAVIGATION ....... */
+.navigation {
+    display: none;
+    background-color: white;
+    border-top: 1px solid var(--border-color);
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: background-color .3s ease;
+}
+
+.navigation a:hover {
+    background-color: var(--surface-color);
+}
+
+.navigation a.active,
+.navigation a[aria-current="page"] {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+
+/* ........ MAIN ......... */
+main {
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+    padding-block: 1rem;
+}
+
+
+/* .......... SECTIONS ........... */
+section {
+    margin-bottom: 3rem;
+}
+
+
+/* .......... BUTTONS ........... */
+.button-primary {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+    color: white;
+}
+
+.button-secondary {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    background-color: var(--background-color);
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.button-secondary:hover {
+    transform: translateY(-2px);
+    color: white;
+}
+
+
+/* ......... FOOTER .......... */
+footer {
+    margin-top: 4rem;
+    padding: 2.5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+/* ---------- FOOTER BRAND ---------- */
+
+.footer-brand img {
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-brand h3 {
+    color: white;
+}
+
+.footer-brand p {
+    color: rgba(255, 255, 255, .90);
+    margin-bottom: .75rem;
+}
+
+/* ---------- FOOTER LINKS ---------- */
+
+.footer-links {
+    margin-top: 2rem;
+}
+
+.footer-links h3 {
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: .5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+    padding-left: .3rem;
+}
+
+/* ---------- FOOTER SOCIAL ---------- */
+.footer-social {
+    text-align: center;
+}
+
+.footer-social h3 {
+    color: white;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 0 .4rem;
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.footer-social a i {
+    color: inherit;
+}
+
+.footer-social a:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-brand h3,
+.footer-links h3,
+.footer-social h3 {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.footer-brand h3::after,
+.footer-links h3::after,
+.footer-social h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--secondary-color);
+    margin: .5rem auto 0;
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, .20);
+}
+
+
+/* .......... UTILITY CLASSES .......... */
+.text-center {
+    text-align: center;
+}
+
+.surface {
+    background-color: var(--surface-color);
+}
+
+.shadow {
+    box-shadow: var(--shadow-sm);
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+
+/* ......... EXTRA SMALL DEVICES ......... */
+@media (max-width: 360px) {
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-name {
+        font-size: .85rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}

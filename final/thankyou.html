@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META CONFIGURATION -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thank you for contacting Walking with Purpose. Review your submitted information and continue exploring temples and family history.">
+    <meta name="author" content="Miguel Angel Cornejo Durand">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Walking with Purpose | Thank You">
+    <meta property="og:description"
+        content="Continue exploring temples, family history, and the covenant path.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-arequipatemple.webp">
+    <meta property="og:url" content="https://michellangello27.github.io/wdd231/final/thankyou.html">
+
+    <!-- TITLE -->
+    <title>Walking with Purpose | Thank You</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <div class="header-container">
+
+        <!-- ............ BRAND LOGO .......... -->
+        <a href="index.html" class="brand" aria-label="Go to Walking with Purpose homepage">
+            <img src="images/logo.webp"
+                alt="Walking with Purpose logo"
+                width="70"
+                height="70"
+                fetchpriority="high">
+
+            <span class="brand-name">
+                Walking with Purpose
+            </span>
+        </a>
+
+        <!-- ....... MOBILE MENU BUTTON ........ -->
+        <button id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <!-- ........ PRIMARY NAVIGATION ......... -->
+        <nav id="primary-navigation"
+            class="navigation"
+            aria-label="Primary navigation">
+
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="temples.html">
+                        Temples
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        Covenant Path
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        Family History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="favorites.html">
+                        Favorites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+</header>
+
+    <main>
+        <section class="thankyou-hero" aria-labelledby="thankyou-title">
+            <div class="thankyou-hero-content">
+                <span class="success-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span>
+                <p class="eyebrow">Message Received</p>
+                <h1 id="thankyou-title">Thank You, <span id="visitor-greeting">Friend</span>!</h1>
+                <p>Your message has been received. May your study of temples and family history bring greater purpose,
+                    connection, and peace.</p>
+            </div>
+        </section>
+
+        <div class="thankyou-layout">
+            <section class="thankyou-card submission-card" aria-labelledby="submission-title">
+                <div class="card-heading">
+                    <p class="eyebrow">Form Action Page</p>
+                    <h2 id="submission-title">Submitted Information</h2>
+                    <p>Please review the information sent from the contact form.</p>
+                </div>
+
+                <dl class="submission-list">
+                    <div>
+                        <dt>Full Name</dt>
+                        <dd id="submitted-name">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd id="submitted-email">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Country</dt>
+                        <dd id="submitted-country">Not provided</dd>
+                    </div>
+                    <div>
+                        <dt>Favorite Temple</dt>
+                        <dd id="submitted-temple">Not provided</dd>
+                    </div>
+                    <div class="message-item">
+                        <dt>Message</dt>
+                        <dd id="submitted-message">Not provided</dd>
+                    </div>
+                </dl>
+
+                <a class="secondary-action" href="contact.html">Send Another Message</a>
+            </section>
+
+            <aside class="thankyou-card explore-card" aria-labelledby="explore-title">
+                <img src="images/hero-arequipatemple.webp" alt="Arequipa Peru Temple beneath a blue sky"
+                    loading="lazy">
+                <div class="explore-content">
+                    <p class="eyebrow">Keep Walking</p>
+                    <h2 id="explore-title">Continue Exploring</h2>
+                    <p>Every faithful step can deepen your connection with Jesus Christ and generations of your
+                        family.</p>
+                    <nav aria-label="Continue exploring">
+                        <ul class="explore-links">
+                            <li><a href="temples.html"><i class="fa-solid fa-church" aria-hidden="true"></i>Explore
+                                    Temples</a></li>
+                            <li><a href="family-history.html"><i class="fa-solid fa-people-roof"
+                                        aria-hidden="true"></i>Begin Family History</a></li>
+                            <li><a href="covenants-path.html"><i class="fa-solid fa-route"
+                                        aria-hidden="true"></i>Follow the Covenant Path</a></li>
+                            <li><a href="resources.html"><i class="fa-solid fa-book-open"
+                                        aria-hidden="true"></i>Browse Resources</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <img src="images/logo.webp" alt="Walking with Purpose logo" width="80" height="80">
+            <h3>Walking with Purpose</h3>
+            <p>Jesus Christ teaches us <br>the way through the veil</p>
+            <p>Temples • Family History <br>• Eternal Families</p>
+        </div>
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="covenants-path.html">Covenant Path</a></li>
+                <li><a href="family-history.html">Family History</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:contact@walkingwithpurpose.org" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>WDD231 Final Project</p>
+            <p>© <span id="currentyear"></span> Miguel Angel Cornejo Durand</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
