@@ -116,71 +116,76 @@
         </div>
     </header>
 
-   <main>
+    <main>
 
-    <!-- .......... RESOURCES HERO SECTION .......... -->
-    <section class="resources-hero" aria-labelledby="resources-title">
-        <div class="resources-hero-content">
-            <p class="eyebrow">Walking with Purpose</p>
-            <h1 id="resources-title">Resources & Learning Center</h1>
-            <p>Explore scriptures, guides, videos and educational resources.</p>
-            <form class="hero-search" role="search">
-                <label for="resource-search" class="visually-hidden">Search resources</label>
-                <input id="resource-search" type="search" placeholder="Search Resources" autocomplete="off">
-            </form>
-        </div>
-    </section>
-
-
-    <!-- ........ RESOURCE STATISTICS SECTION ........ -->
-    <section class="resource-stats" aria-label="Resource statistics">
-        <article class="stat-card">
-            <span id="total-resources">0</span>
-            <p>Total Resources</p>
-        </article>
-
-        <article class="stat-card">
-            <span id="scripture-count">0</span>
-            <p>Scriptures</p>
-        </article>
-
-        <article class="stat-card">
-            <span id="guide-count">0</span>
-            <p>Guides</p>
-        </article>
-
-        <article class="stat-card">
-            <span id="video-count">0</span>
-            <p>Videos</p>
-        </article>
-    </section>
+        <!-- .......... RESOURCES HERO SECTION .......... -->
+        <section class="resources-hero" aria-labelledby="resources-title">
+            <div class="resources-hero-content">
+                <p class="eyebrow">Walking with Purpose</p>
+                <h1 id="resources-title">Resources & Learning Center</h1>
+                <p>Explore scriptures, guides, videos and educational resources.</p>
+                <form class="hero-search" role="search">
+                    <label for="resource-search" class="visually-hidden">Search resources</label>
+                    <input id="resource-search" type="search" placeholder="Search Resources" autocomplete="off">
+                </form>
+            </div>
+        </section>
 
 
-    <!-- .......... RESOURCE FILTER SECTION .......... -->
-    <section class="resource-controls" aria-labelledby="filter-heading">
-        <h2 id="filter-heading">Browse Resources</h2>
+        <!-- ........ RESOURCE STATISTICS SECTION ........ -->
+        <section class="resource-stats" aria-label="Resource statistics">
+            <article class="stat-card">
+                <h2 class="visually-hidden">Total Resources</h2>
+                <span id="total-resources">0</span>
+                <p>Total Resources</p>
+            </article>
 
-        <div class="filter-buttons" aria-label="Filter resources by type">
-            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-btn" type="button" data-filter="scriptures" aria-pressed="false">Scriptures</button>
-            <button class="filter-btn" type="button" data-filter="videos" aria-pressed="false">Videos</button>
-            <button class="filter-btn" type="button" data-filter="articles" aria-pressed="false">Articles</button>
-            <button class="filter-btn" type="button" data-filter="guides" aria-pressed="false">Guides</button>
-        </div>
-    </section>
+            <article class="stat-card">
+                <h2 class="visually-hidden">Scriptures</h2>
+                <span id="scripture-count">0</span>
+                <p>Scriptures</p>
+            </article>
+
+            <article class="stat-card">
+                <h2 class="visually-hidden">Guides</h2>
+                <span id="guide-count">0</span>
+                <p>Guides</p>
+            </article>
+
+            <article class="stat-card">
+                <h2 class="visually-hidden">Videos</h2>
+                <span id="video-count">0</span>
+                <p>Videos</p>
+            </article>
+        </section>
 
 
-    <!-- .......... RESOURCE RESULTS SECTION .......... -->
-    <section class="resource-results" aria-live="polite">
-        <div id="resource-grid" class="resource-grid"></div>
+        <!-- .......... RESOURCE FILTER SECTION .......... -->
+        <section class="resource-controls" aria-labelledby="filter-heading">
+            <h2 id="filter-heading">Browse Resources</h2>
 
-        <div id="empty-state" class="empty-state" hidden>
-            <h2>No resources found</h2>
-            <p>Try a different search term or choose another filter.</p>
-        </div>
-    </section>
+            <div class="filter-buttons" aria-label="Filter resources by type">
+                <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" type="button" data-filter="scriptures"
+                    aria-pressed="false">Scriptures</button>
+                <button class="filter-btn" type="button" data-filter="videos" aria-pressed="false">Videos</button>
+                <button class="filter-btn" type="button" data-filter="articles" aria-pressed="false">Articles</button>
+                <button class="filter-btn" type="button" data-filter="guides" aria-pressed="false">Guides</button>
+            </div>
+        </section>
 
-</main>
+
+        <!-- .......... RESOURCE RESULTS SECTION .......... -->
+        <section class="resource-results" aria-live="polite">
+            <div id="resource-grid" class="resource-grid"></div>
+
+            <div id="empty-state" class="empty-state" hidden>
+                <h2>No resources found</h2>
+                <p>Try a different search term or choose another filter.</p>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <div class="footer-brand">
@@ -221,5 +226,3 @@
 </body>
 
 </html>
-
-
