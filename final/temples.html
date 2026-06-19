@@ -48,83 +48,74 @@
 
 <body>
     <header>
-    <div class="header-container">
+        <div class="header-container">
 
-        <!-- ............ BRAND LOGO .......... -->
-        <a href="index.html" class="brand" aria-label="Go to Walking with Purpose homepage">
-            <img src="images/logo.webp"
-                alt="Walking with Purpose logo"
-                width="70"
-                height="70"
-                fetchpriority="high">
+            <!-- ............ BRAND LOGO .......... -->
+            <a href="index.html" class="brand" aria-label="Go to Walking with Purpose homepage">
+                <img src="images/logo.webp" alt="Walking with Purpose logo" width="70" height="70" fetchpriority="high">
 
-            <span class="brand-name">
-                Walking with Purpose
-            </span>
-        </a>
+                <span class="brand-name">
+                    Walking with Purpose
+                </span>
+            </a>
 
-        <!-- ....... MOBILE MENU BUTTON ........ -->
-        <button id="menu-button"
-            class="menu-button"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-            aria-controls="primary-navigation">
-            ☰
-        </button>
+            <!-- ....... MOBILE MENU BUTTON ........ -->
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
 
-        <!-- ........ PRIMARY NAVIGATION ......... -->
-        <nav id="primary-navigation"
-            class="navigation"
-            aria-label="Primary navigation">
+            <!-- ........ PRIMARY NAVIGATION ......... -->
+            <nav id="primary-navigation" class="navigation" aria-label="Primary navigation">
 
-            <ul>
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="temples.html" aria-current="page">
-                        Temples
-                    </a>
-                </li>
+                    <li>
+                        <a href="temples.html" aria-current="page">
+                            Temples
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="index.html">
-                        Covenant Path
-                    </a>
-                </li>
+                    <li>
+                        <a href="index.html">
+                            Covenant Path
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="index.html">
-                        Family History
-                    </a>
-                </li>
+                    <li>
+                        <a href="index.html">
+                            Family History
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="resources.html">
-                        Resources
-                    </a>
-                </li>
+                    <li>
+                        <a href="resources.html">
+                            Resources
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="favorites.html">
-                        Favorites
-                    </a>
-                </li>
+                    <li>
+                        <a href="favorites.html">
+                            Favorites
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
 
-        </nav>
+            </nav>
 
-    </div>
-</header>
+        </div>
+    </header>
 
     <main>
         <section class="hero" aria-labelledby="temple-title">
@@ -132,7 +123,8 @@
             <div class="hero-content">
                 <h1 id="temple-title">Temple Explorer</h1>
                 <p class="hero-tagline">Discover temples around the world</p>
-                <p class="hero-text">Explore temple locations, dedication dates, construction updates, and sacred purposes.</p>
+                <p class="hero-text">Explore temple locations, dedication dates, construction updates, and sacred
+                    purposes.</p>
                 <div class="hero-cta">
                     <a href="#temple-grid" class="primary-btn">Explore Temples</a>
                     <a href="favorites.html" class="secondary-btn">View Favorites</a>
@@ -144,34 +136,45 @@
             <h2 id="search-heading">Find a Temple</h2>
             <div class="search-container" role="search">
                 <label for="search-input" class="visually-hidden">Search temples</label>
-                <input type="search" id="search-input" placeholder="Search temples by name, city, or country..." autocomplete="off">
+                <input type="search" id="search-input" placeholder="Search temples by name, city, or country..."
+                    autocomplete="off">
             </div>
         </section>
 
         <section class="temple-filters" aria-label="Filter temples by status">
             <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
             <button class="filter-btn" type="button" data-filter="operating" aria-pressed="false">Operating</button>
-            <button class="filter-btn" type="button" data-filter="construction" aria-pressed="false">Construction</button>
+            <button class="filter-btn" type="button" data-filter="construction"
+                aria-pressed="false">Construction</button>
             <button class="filter-btn" type="button" data-filter="announced" aria-pressed="false">Announced</button>
         </section>
 
         <section class="temple-stats" aria-label="Temple statistics">
+
             <article class="stat-card">
+                <h2 class="visually-hidden">Total Temples</h2>
                 <span id="total-temples">0</span>
                 <p>Temples</p>
             </article>
+
             <article class="stat-card">
+                <h2 class="visually-hidden">Operating Temples</h2>
                 <span id="operating-count">0</span>
                 <p>Operating</p>
             </article>
+
             <article class="stat-card">
+                <h2 class="visually-hidden">Temples Under Construction</h2>
                 <span id="construction-count">0</span>
                 <p>Construction</p>
             </article>
+
             <article class="stat-card">
+                <h2 class="visually-hidden">Announced Temples</h2>
                 <span id="announced-count">0</span>
                 <p>Announced</p>
             </article>
+
         </section>
 
         <section class="temples-section" aria-live="polite">
